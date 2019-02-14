@@ -1,0 +1,224 @@
+---
+title: "Wilson"
+author: "Peduwan"
+date: "14 helmikuuta 2019"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(knitr)
+knitr::opts_knit$set(root.dir = "\\\\ATKK/home/p/pdsalo/Desktop/Gradu")
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(scales)
+library(readxl)
+library(expss)
+```
+
+
+```{r junioridata, echo=FALSE}
+#setwd("//ad.helsinki.fi/home/p/pdsalo/Desktop/Gradu")
+
+unique_jun <- read.table("data/unijun.txt")
+
+unique_jun$syntymakuukausi.x = factor(unique_jun$syntymakuukausi.x,levels(unique_jun$syntymakuukausi.x)[c(1,3,4,2)])
+
+unique_jun$syntymakuukausi.y = factor(unique_jun$syntymakuukausi.y,levels(unique_jun$syntymakuukausi.y)[c(1,3,4,2)])
+
+unique_jun = unique_jun %>% group_by(Sukupuoli, VVVV, syntymakuukausi.x, kausi) %>% mutate(lkm=sum(lkm.x))
+
+#str(unique_jun)
+```
+
+
+Yleensä aiheen tutkimuksissa syntypäivät jaetaan neljänneksiin. Tässä tutkimuksessa toimitaan samoin.
+
+Vuosina 1983-2013 Suomessa on syntynyt vuosittain noin 53-67 tuhatta lasta. Tarkasteltaessa väestön syntymäaikoja neljänneksittäin havaitaan, että toisen ja kolmannen neljänneksen aikana on syntynyt hieman enemmän lapsia kuin ensimmäisellä ja vastaavasti viimeisellä neljänneksellä on syntynyt selkeästi vähiten lapsia. Kuvasta nähdään, että toisen ja kolmannen neljänneksen aikana on syntynyt 25-26,5 prosenttia vuoden kaikista lapsista. Ensimmäisen neljänneksen osuus on kaikkein lähinpänä tasajakaumaa vastaavaa osuutta eli se on vaihdellut noin 24,5-25,5 prosentissa. Viimeisen neljänneksen osuus taas kuten mainittu on ollut selkeästi pienin vaihdellen jopa alle 23 prosentista noin 24,5 prosenttiin. 
+
+Tämä on tärkeää ottaa huomioon suhteellisen iän ilmiön esiintymistä tutkittaessa, sillä väestön syntymäaikojen epätasainen jakauma voi osaltaan selittää havaittuja urheiluharrastajien epätasaisia jakaumia. Toisaalta urheilun parissa havaittujen jakaumien tulisi kuitenkin olla suhteellisen tasaisia, jotta väestön syntymäajat selittäisivät ilmiön kokonaan. 
+
+```{r 14-vuotiaat kausilla..., echo=FALSE}
+
+jun <- subset(unique_jun, VVVV<2014 & VVVV>1880)
+
+#jun <- mutate(jun, factor(jun$kausi))
+
+bp <- ggplot(jun, aes(x=syntymakuukausi.x, y=proportion.y, group=VVVV)) +
+  
+  geom_point(aes(color=VVVV)) + 
+  geom_line(aes(color=VVVV))+
+  #geom_hline(yintercept = 0)+
+  #facet_wrap(~ika,ncol = 4)+
+  #geom_smooth(method = "lm")+
+  scale_y_continuous(labels=percent_format()) + 
+labs(title = paste("Väestön syntymäaikojen jakauma vuosina 1883-2013,\n","n =",toString(sum(jun[,6]))))
+
+print(bp)
+```
+
+
+
+
+#### Khiin neliö testi:
+
+Ilmiötä voidaan tutkia vertaamalla havaintoarvoja eli pelaajien syntymäaikojen havaittuja frekvenssejä ja väestön perusteella odotettuja frekvenssejä. Khiin neliö testi vertaa havaittua ja odotettua jakaumaa seuraavalla kaavalla: 
+
+              Testin kaava: 
+              
+              
+Tämän avulla voidaan testata onko jollakin havaitulla jakaumalla ja odotetulla jakaumalla tilastollisesti merkitsevää eroa.
+
+"Testisuure X^2
+- riippuvuuden määrän matemaattinen mitta
+- käytetään tilastollisen merkitsevyyden tarkasteluun
+- Arvo, kun muuttajat tilastollisesti täysin riippumattomia
+  - Tarkoittaa, että havaitut ja odotetut frekvenssit yhtäsuuret
+- "
+
+
+??? Jos erot ovat pienet??? suuri riski että erot johtuvat sattumasta: Sig. > 0,05 H0 jää voimaan eli muuttujat eivät riipu toisistaan (ryhmien välillä ei ole tilastollisesti merkitsevää eroa).
+ 
+ Jos erot ovat suuret pieni riski että erot johtuvat sattumasta: Sig. p ??? 0,05 H1 tulee voimaan eli muuttujat riippuvat toisistaan (ryhmien välillä on merkitsevä ero).
+ 
+ http://www.tilastollinentutkimus.fi/5.SPSS/Riippuvuudet.pdf
+ 
+Tehdään Khii neliö testi:
+
+juniorit eri ikäluokille, vuosille ja sukupuolille - selvitetään ilmiön läsnäolo eri ikäluokissa ja sukupuolissa
+
+Tulokset:
+
+```{r taulukon tekijä, echo=FALSE}
+
+havaitut <- data.frame()
+parvot <- data.frame()
+khiit <- data.frame()
+ika <- data.frame()
+kausi <- data.frame()
+tuloslkm <- data.frame()
+prosentit <- data.frame()
+
+tulos4 <- 2
+tulosy <- c(1:4)
+
+kaudet <- c(2004,2007,2010,2013,2016)
+iat <- c(8,10,12,14,16,18)
+
+
+for (ii in kaudet) {
+  
+for (i in iat) {
+  
+jun <- subset(unique_jun, kausi==ii & (ika==(i)) & sukupuoli=="pojat")
+jun <- jun[order(jun$KK),]
+
+keep <- c("ika","kausi","Sukupuoli","pct.x","lkm.x","pct.y", "KK", "VVVV", "lkm.y", "proportion.y", "syntymakuukausi.x", "lkm")
+
+# select the 'keep' columns
+testdata <- select(jun, one_of(keep))
+
+testdata <- testdata %>% group_by(KK) %>% mutate(lkmx2 = sum(lkm.x),
+                                                 lkmy2= sum(lkm.y))
+
+testdata <- testdata %>% group_by(syntymakuukausi.x) %>% mutate(lkmy = sum(lkm.y), lkmx = sum(lkm.x))
+                                      
+
+testdata <- testdata %>% mutate(pcty2 = lkmy2/sum(testdata$lkm.y),
+                                proportiony2=lkmy/sum(testdata$lkm.y))
+
+keep <- c("Sukupuoli", "pcty2", "KK", "lkmx2", "syntymakuukausi.x")
+
+
+
+keep <- c("Sukupuoli", "proportiony2", "syntymakuukausi.x", "lkmx")
+
+# select the 'keep' columns
+testdata <- select(testdata, one_of(keep))
+testdata <- unique(testdata)
+
+chisq <- chisq.test(testdata$lkmx, p = testdata$proportiony2)
+
+chisq
+
+chisq$observed
+
+round(chisq$expected)
+
+tuloslkm <- chisq$observed
+
+tulos <- format(round((tuloslkm/sum(tuloslkm))*100,1), nsmall = 1)
+
+prosentit <- rbind(prosentit, tulos, stringsAsFactors = FALSE)
+
+  for (iii in 1:4) {
+  
+    tulosy[iii] <- paste(tuloslkm[iii]," (", tulos[iii], "%)" ,sep = "")
+    
+  }
+
+havaitut <- rbind(havaitut, tulosy, stringsAsFactors = FALSE)
+
+
+
+tulos1 <- chisq$p.value
+
+if(tulos1 > 0.05) {
+  tulosp <- round(tulos1, 3)
+}
+
+if(tulos1 < 0.05) {
+  tulosp <- "<0,05"
+}
+
+if (tulos1 < 0.01) {
+  tulosp <- "<0,01"
+}
+
+parvot <- rbind(parvot, tulosp,stringsAsFactors = FALSE)
+
+
+
+
+tulos2 <- round(chisq$statistic, 2)
+khiit <- rbind(khiit, tulos2)
+tulos3 <- i
+ika <- rbind(ika, tulos3)
+
+  if (ii == tulos4) {
+    kausi <- rbind(kausi, "")
+  }
+
+  if (ii != tulos4) {
+    tulos4 <- ii
+    kausi <- rbind(kausi, tulos4)
+  }
+
+
+}
+
+}  
+
+taulukko <- cbind(kausi, ika, havaitut, khiit, parvot)
+colnames(taulukko) <- c("Kausi","Ikä", "eka","toka","kol","nel", "X^2", "P-arvo")
+
+print(taulukko)
+```
+
+
+
+Havaitaan, että väestön ja pelaajien syntymäaikojen jakaumat eroavat tilastollisesti merkittävästi lähes jokaisessa tarkasteltavassa ryhmässä. Huomataan myös, että ensimmäisellä neljänneksellä syntyneiden pelaajien osuus  väestöön verrattuna huomattavasti suurempi osuus  . Vastaavasti taas viimeisen neljänneksen osuus on vielä pienempi kuin väestössä.
+
+
+
+
+
+
+
+pohjola leiriläisille/tyttöjen maajoukkue pelaajille
+
+Ammattilaisille jokin vertailu?
