@@ -1,0 +1,410 @@
+"Nimi" "Joukkue" "Syntymäpaikka" "Kansalaisuus" "Syntymäaika" "Ikä" "Pituus" "Paino" "Maila" "KK" "VVVV" "ika" "kausi"
+"1" "Aalto, Teemu" "Tappara" "Kokkola, FIN" "FIN" 1978-03-30 40 "181" "86" "R" 3 1978 37 16
+"2" "Aaltonen, Miro" "Kärpät" "Joensuu, FIN" "FIN" 1993-06-07 25 "179" "77" "L" 6 1993 22 16
+"3" "Ahlgren, Ville" "Ässät" "Pori, FIN" "FIN" 1993-10-06 25 "175" "78" "L" 10 1993 22 16
+"4" "Aho, Sebastian" "Kärpät" "-" "FIN" 1997-07-26 21 "181" "78" "L" 7 1997 18 16
+"5" "Ahonen, Ari" "Ässät" "Jyväskylä, FIN" "FIN" 1981-02-06 37 "186" "85" "L" 2 1981 34 16
+"6" "Ahonen, Rony" "Lukko" "Porvoo, FIN" "FIN" 1987-01-17 31 "181" "96" "L" 1 1987 28 16
+"7" "Ahtola, Jerry" "TPS" "Turku, FIN" "FIN" 1986-03-25 32 "192" "91" "L" 3 1986 29 16
+"8" "Aitola, Olli*" "JYP" "Jyväskylä, FIN" "FIN" 1992-02-03 26 "186" "84" "L" 2 1992 23 16
+"9" "Aittokallio, Sami" "Kärpät" "Tampere, FIN" "FIN" 1992-08-06 26 "186" "84" "L" 8 1992 23 16
+"10" "Alanne, Joonas" "Pelicans" "Rovaniemi, FIN" "FIN" 1990-12-05 27 "183" "84" "L" 12 1990 25 16
+"11" "Alikoski, Mikko" "KooKoo" "Oulu, FIN" "FIN" 1986-07-28 32 "171" "82" "L" 7 1986 29 16
+"12" "Andersson, Niklas" "Blues" "-" "FIN" 1995-05-12 23 "175" "67" "L" 5 1995 20 16
+"13" "Antonen, Joose*" "JYP" "Tampere, FIN" "FIN" 1995-04-28 23 "187" "82" "R" 4 1995 20 16
+"14" "Anttila, Sami*" "Kärpät" "Oulu, FIN" "FIN" 1995-02-08 23 "171" "79" "L" 2 1995 20 16
+"15" "Arkiomaa, Eetu-Ville" "Blues" "-" "FIN" 1993-08-26 25 "183" "84" "R" 8 1993 22 16
+"16" "Asplund, Turo" "Lukko" "Jyväskylä, FIN" "FIN" 1985-06-08 33 "181" "94" "L" 6 1985 30 16
+"17" "Auvinen, Henri" "HPK" "Jyväskylä, FIN" "FIN" 1993-02-21 25 "188" "86" "L" 2 1993 22 16
+"18" "Backman, Simon" "SaiPa" "Pietarsaari, FIN" "FIN" 1984-06-12 34 "175" "82" "L" 6 1984 31 16
+"19" "Ben-Amor, Semir" "Ässät" "Helsinki, FIN" "FIN" 1982-05-06 36 "184" "104" "L" 5 1982 33 16
+"20" "Berger, Martin" "TPS" "Turku, FIN" "FIN" 1996-12-10 21 "182" "86" "L" 12 1996 19 16
+"21" "Björninen, Hannes" "Pelicans" "Lahti, FIN" "FIN" 1995-10-19 23 "185" "86" "L" 10 1995 20 16
+"22" "Blomqvist, Sami" "Sport" "Espoo, FIN" "FIN" 1990-06-12 28 "178" "84" "L" 6 1990 25 16
+"23" "Bruun, Antti" "HPK" "Savonlinna, FIN" "FIN" 1979-11-09 39 "184" "88" "L" 11 1979 36 16
+"24" "Elorinne, Aleksi" "Tappara" "Joensuu, FIN" "FIN" 1990-02-03 28 "196" "99" "L" 2 1990 25 16
+"25" "Erkinjuntti, Antti" "Pelicans" "Rovaniemi, FIN" "FIN" 1986-05-30 32 "181" "86" "L" 5 1986 29 16
+"26" "Eronen, Elmeri" "TPS" "Turku, FIN" "FIN" 1995-01-27 23 "176" "79" "R" 1 1995 20 16
+"27" "Fagerudd, Marcus" "Ilves" "Pietarsaari, FIN" "FIN" 1992-12-17 25 "179" "81" "R" 12 1992 23 16
+"28" "Flinck, Markku" "Ilves" "Espoo, FIN" "FIN" 1985-01-04 33 "186" "93" "L" 1 1985 30 16
+"29" "Fonsen, Anton*" "Ässät" "-" "FIN" 1995-03-21 23 "176" "80" "L" 3 1995 20 16
+"30" "Forsberg, Henrik" "HPK" "Vaasa, FIN" "FIN" 1985-09-10 33 "182" "87" "L" 9 1985 30 16
+"31" "Forsström, Jani+" "TPS" "Lahti, FIN" "FIN" 1986-02-19 32 "186" "95" "L" 2 1986 29 16
+"32" "Friman, Niklas+" "TPS" "Rauma, FIN" "FIN" 1993-08-30 25 "189" "88" "L" 8 1993 22 16
+"33" "Gröndahl, Ari" "Sport" "Helsinki, FIN" "FIN" 1989-08-11 29 "195" "101" "R" 8 1989 26 16
+"34" "Grönholm, Ossi-Petteri+" "KooKoo" "Pyhtää, FIN" "FIN" 1981-09-17 37 "180" "92" "L" 9 1981 34 16
+"35" "Haapala, Henrik" "Tappara" "Lempäälä, FIN" "FIN" 1994-02-28 24 "176" "78" "L" 2 1994 21 16
+"36" "Haaranen, Matias*" "HPK" "Riihimäki, FIN" "FIN" 1996-07-11 22 "170" "65" "L" 7 1996 19 16
+"37" "Haataja, Juha-Pekka" "KooKoo" "Oulu, FIN" "FIN" 1982-10-31 36 "183" "88" "R" 10 1982 33 16
+"38" "Hahl, Riku+" "HPK" "Hämeenlinna, FIN" "FIN" 1980-11-01 38 "184" "92" "L" 11 1980 35 16
+"39" "Hakanpää, Jani" "Kärpät" "Kirkkonummi, FIN" "FIN" 1992-03-31 26 "195" "94" "R" 3 1992 23 16
+"40" "Hakulinen, Anrei" "KooKoo" "Turku, FIN" "FIN" 1990-02-08 28 "188" "90" "L" 2 1990 25 16
+"41" "Halonen, Antti" "KalPa" "Kajaani, FIN" "FIN" 1982-02-02 36 "182" "92" "L" 2 1982 33 16
+"42" "Harainen, Tommi*" "HPK" "Riihimäki, FIN" "FIN" 1996-04-06 22 "184" "81" "R" 4 1996 19 16
+"43" "Harjama, Joona" "KalPa" "Hamina, FIN" "FIN" 1993-07-05 25 "183" "80" "L" 7 1993 22 16
+"44" "Heikkilä, Miika*" "Tappara" "Loppi, FIN" "FIN" 1992-02-07 26 "186" "81" "R" 2 1992 23 16
+"45" "Heikkinen, Eemeli*" "HIFK" "Helsinki, FIN" "FIN" 1994-08-29 24 "195" "97" "R" 8 1994 21 16
+"46" "Heino, Henri" "Pelicans" "Lahti, FIN" "FIN" 1986-06-14 32 "180" "93" "L" 6 1986 29 16
+"47" "Helenius, Jere*" "Ilves" "Nokia, FIN" "FIN" 1995-08-03 23 "181" "80" "L" 8 1995 20 16
+"48" "Heljanko, Christian*" "HIFK" "Porvoo, FIN" "FIN" 1997-04-02 21 "182" "76" "L" 4 1997 18 16
+"49" "Hietanen, Valtteri" "JYP" "Virrat, FIN" "FIN" 1992-12-23 25 "186" "88" "L" 12 1992 23 16
+"50" "Hintz, Roope" "HIFK" "Tampere, FIN" "FIN" 1996-11-17 22 "191" "94" "L" 11 1996 19 16
+"51" "Hirschovits, Kim" "Kärpät" "-" "FIN" 1982-05-09 36 "184" "88" "L" 5 1982 33 16
+"52" "Honkaheimo, Otto" "HPK" "Rauma, FIN" "FIN" 1985-08-03 33 "184" "94" "L" 8 1985 30 16
+"53" "Honkanen, Manu*" "Tappara" "Turku, FIN" "FIN" 1996-04-29 22 "178" "70" "R" 4 1996 19 16
+"54" "Hopponen, Erno*" "Blues" "Helsinki, FIN" "FIN" 1996-12-16 21 "185" "92" "L" 12 1996 19 16
+"55" "Hopponen, Waltteri*" "HPK" "Helsinki, FIN" "FIN" 1996-02-04 22 "185" "85" "L" 2 1996 19 16
+"56" "Hotakainen, Valtteri" "JYP" "Kokkola, FIN" "FIN" 1990-04-24 28 "187" "89" "L" 4 1990 25 16
+"57" "Hovinen, Miro" "Pelicans" "Espoo, FIN" "FIN" 1992-04-29 26 "192" "95" "L" 4 1992 23 16
+"58" "Hovinen, Niko" "Pelicans" "Helsinki, FIN" "FIN" 1988-03-16 30 "200" "102" "L" 3 1988 27 16
+"59" "Huhtanen, Miika*" "SaiPa" "Lappeenranta, FIN" "FIN" 1993-07-23 25 "177" "76" "L" 7 1993 22 16
+"60" "Huhtanen, Tuomas" "KooKoo" "Noormarkku, FIN" "FIN" 1987-03-16 31 "188" "93" "L" 3 1987 28 16
+"61" "Humaloja, Miska" "Kärpät" "Pyhäjärvi, FIN" "FIN" 1991-05-15 27 "182" "90" "L" 5 1991 24 16
+"62" "Hurri, Joonas" "Pelicans" "Lahti, FIN" "FIN" 1991-03-31 27 "181" "80" "L" 3 1991 24 16
+"63" "Husso, Ville" "HIFK" "Helsinki, FIN" "FIN" 1995-02-06 23 "187" "83" "L" 2 1995 20 16
+"64" "Hyvärinen, Toni" "KooKoo" "Kuopio, FIN" "FIN" 1988-07-14 30 "183" "90" "R" 7 1988 27 16
+"65" "Hämäläinen, Ville" "SaiPa" "Lappeenranta, FIN" "FIN" 1981-07-06 37 "181" "80" "L" 7 1981 34 16
+"66" "Hämäläinen, Aleksi*" "KalPa" "Suonenjoki, FIN" "FIN" 1995-11-30 22 "182" "78" "L" 11 1995 20 16
+"67" "Iisakka, Olli" "Blues" "-" "FIN" 1996-08-09 22 "190" "83" "L" 8 1996 19 16
+"68" "Ikonen, Juuso" "Kärpät" "Espoo, FIN" "FIN" 1995-01-03 23 "175" "77" "R" 1 1995 20 16
+"69" "Ikonen, Jasse" "HIFK" "Kuopio, FIN" "FIN" 1990-06-13 28 "184" "86" "L" 6 1990 25 16
+"70" "Ilomäki, Arttu" "Tappara" "Tampere, FIN" "FIN" 1991-06-12 27 "182" "88" "R" 6 1991 24 16
+"71" "Immonen, Jarkko" "Sport" "Kouvola, FIN" "FIN" 1984-01-18 34 "182" "90" "L" 1 1984 31 16
+"72" "Jaatinen, Antti+" "Ilves" "Mikkeli, FIN" "FIN" 1986-07-24 32 "187" "86" "L" 7 1986 29 16
+"73" "Jaatinen, Antti" "Lukko" "Mäntyharju, FIN" "FIN" 1987-09-24 31 "185" "91" "L" 9 1987 28 16
+"74" "Jasu, Juhani" "Tappara" "Eurajoki, FIN" "FIN" 1988-01-19 30 "185" "89" "R" 1 1988 27 16
+"75" "Jokela, Mikko" "KalPa" "Lappeenranta, FIN" "FIN" 1980-03-04 38 "185" "95" "R" 3 1980 35 16
+"76" "Jokinen, Jaakko*" "JYP" "Jämsä, FIN" "FIN" 1993-07-17 25 "189" "90" "L" 7 1993 22 16
+"77" "Jokinen, Markus" "Ilves" "Mänttä, FIN" "FIN" 1988-09-13 30 "184" "91" "L" 9 1988 27 16
+"78" "Jokinen, Tommi" "SaiPa" "Siilinjärvi, FIN" "FIN" 1988-09-17 30 "184" "87" "L" 9 1988 27 16
+"79" "Junnila, Jyri" "KalPa" "Raahe, FIN" "FIN" 1984-04-07 34 "173" "78" "R" 4 1984 31 16
+"80" "Junttila, Julius" "Kärpät" "Oulu, FIN" "FIN" 1991-08-15 27 "178" "81" "L" 8 1991 24 16
+"81" "Juutilainen, Jan-Mikael" "KooKoo" "Helsinki, FIN" "FIN" 1988-01-05 30 "181" "83" "L" 1 1988 27 16
+"82" "Juvonen, Janne" "Pelicans" "Kiihtelysvaara, FIN" "FIN" 1994-10-03 24 "185" "83" "L" 10 1994 21 16
+"83" "Järveläinen, Ville" "SaiPa" "Hämeenlinna, FIN" "FIN" 1993-02-24 25 "164" "67" "R" 2 1993 22 16
+"84" "Järvenpää, Juha" "KooKoo" "Pori, FIN" "FIN" 1989-05-11 29 "182" "82" "L" 5 1989 26 16
+"85" "Järvinen, Kristian" "HPK" "Turku, FIN" "FIN" 1992-07-29 26 "179" "75" "L" 7 1992 23 16
+"86" "Järvinen, Jan-Mikael" "Tappara" "Pirkkala, FIN" "FIN" 1988-02-26 30 "174" "78" "L" 2 1988 27 16
+"87" "Järvinen, Joonas" "HIFK" "Turku, FIN" "FIN" 1989-01-05 29 "190" "97" "L" 1 1989 26 16
+"88" "Järvinen, Mika" "Sport" "Hattula, FIN" "FIN" 1988-11-15 30 "177" "85" "L" 11 1988 27 16
+"89" "Järvinen, Ville" "Ilves" "Tampere, FIN" "FIN" 1997-01-03 21 "194" "92" "L" 1 1997 18 16
+"90" "Jääskeläinen, Joona*" "SaiPa" "Imatra, FIN" "FIN" 1996-09-05 22 "175" "79" "R" 9 1996 19 16
+"91" "Jääskä, Juha*" "HIFK" "Helsinki, FIN" "FIN" 1998-02-09 20 "179" "86" "L" 2 1998 17 16
+"92" "Kaarlehto, Karolus*" "TPS" "Kaarina, FIN" "FIN" 1997-09-01 21 "186" "75" "L" 9 1997 18 16
+"93" "Kaijomaa, Kalle" "TPS" "Joensuu, FIN" "FIN" 1984-06-01 34 "187" "93" "L" 6 1984 31 16
+"94" "Kainulainen, Harri*" "HPK" "Hämeenlinna, FIN" "FIN" 1996-03-21 22 "188" "82" "R" 3 1996 19 16
+"95" "Kaislehto, Teemu*" "HPK" "-" "FIN" 1994-05-25 24 "190" "93" "L" 5 1994 21 16
+"96" "Kaksonen, Elmeri" "SaiPa" "Savonlinna, FIN" "FIN" 1987-02-12 31 "182" "82" "L" 2 1987 28 16
+"97" "Kalapudas, Antti" "KalPa" "Oulainen, FIN" "FIN" 1996-07-22 22 "182" "85" "L" 7 1996 19 16
+"98" "Kallela, Toni" "Ässät" "Oulainen, FIN" "FIN" 1993-01-10 25 "178" "83" "L" 1 1993 22 16
+"99" "Kallio, Tomi" "TPS" "Turku, FIN" "FIN" 1977-01-27 41 "184" "86" "L" 1 1977 38 16
+"100" "Kalteva, Mikko" "JYP" "Hyvinkää, FIN" "FIN" 1984-05-25 34 "192" "92" "L" 5 1984 31 16
+"101" "Kangasmäki, Aki+" "KooKoo" "Rauma, FIN" "FIN" 1989-05-24 29 "190" "98" "L" 5 1989 26 16
+"102" "Kangasniemi, Iikka*" "Blues" "Oulu, FIN" "FIN" 1995-02-18 23 "170" "70" "L" 2 1995 20 16
+"103" "Kanninen, Henri*" "JYP" "Jyväskylä, FIN" "FIN" 1994-10-17 24 "190" "83" "L" 10 1994 21 16
+"104" "Karevaara, Joona" "HPK" "-" "FIN" 1987-08-26 31 "187" "89" "R" 8 1987 28 16
+"105" "Karhunen, Tomi" "Tappara" "Oulu, FIN" "FIN" 1989-10-29 29 "179" "79" "L" 10 1989 26 16
+"106" "Karjalainen, Antti*" "Lukko" "Kajaani, FIN" "FIN" 1995-08-23 23 "188" "90" "L" 8 1995 20 16
+"107" "Karjalainen, Jere" "Tappara" "Helsinki, FIN" "FIN" 1992-05-23 26 "175" "80" "R" 5 1992 23 16
+"108" "Karjalainen, Miro" "HIFK" "Vihti, FIN" "FIN" 1996-05-23 22 "197" "97" "R" 5 1996 19 16
+"109" "Karjalainen, Teemu*" "HPK" "-" "FIN" 1995-05-29 23 "190" "80" "R" 5 1995 20 16
+"110" "Karvinen, Otto" "Sport" "Vantaa, FIN" "FIN" 1990-04-08 28 "187" "85" "L" 4 1990 25 16
+"111" "Karvonen, Elias*" "TPS" "Turku, FIN" "FIN" 1994-07-28 24 "183" "88" "L" 7 1994 21 16
+"112" "Katosalmi, Janne*" "KalPa" "-" "FIN" 1994-03-04 24 "169" "74" "R" 3 1994 21 16
+"113" "Kemiläinen, Valtteri" "JYP" "Jyväskylä, FIN" "FIN" 1991-12-16 26 "184" "87" "R" 12 1991 24 16
+"114" "Kerälä, Antti" "Ässät" "Hämeenlinna, FIN" "FIN" 1987-02-13 31 "182" "80" "L" 2 1987 28 16
+"115" "Keränen, Janne" "KalPa" "Nurmijärvi, FIN" "FIN" 1987-06-30 31 "178" "89" "L" 6 1987 28 16
+"116" "Keränen, Juho" "Kärpät" "Keitele, FIN" "FIN" 1985-04-07 33 "176" "89" "R" 4 1985 30 16
+"117" "Keskitalo, Miro*+" "TPS" "Vantaa, FIN" "FIN" 1996-02-16 22 "189" "85" "L" 2 1996 19 16
+"118" "Kestilä, Aku*" "Kärpät" "Pyhäjoki, FIN" "FIN" 1994-06-09 24 "181" "78" "L" 6 1994 21 16
+"119" "Kettunen, Janne*" "SaiPa" "Lappeenranta, FIN" "FIN" 1994-08-11 24 "175" "94" "L" 8 1994 21 16
+"120" "Kiilholma, Juha" "Ässät" "Pori, FIN" "FIN" 1982-06-26 36 "182" "84" "L" 6 1982 33 16
+"121" "Kilpeläinen, Eero" "KalPa" "Juva, FIN" "FIN" 1985-05-07 33 "183" "74" "L" 5 1985 30 16
+"122" "Kinnunen, Saku" "KalPa" "Kuhmo, FIN" "FIN" 1995-01-03 23 "178" "85" "L" 1 1995 20 16
+"123" "Kinnunen, Severi*" "KalPa" "-" "FIN" 1997-06-14 21 "181" "80" "L" 6 1997 18 16
+"124" "Kiviaho, Henri" "Ilves" "Lappeenranta, FIN" "FIN" 1994-02-26 24 "192" "90" "L" 2 1994 21 16
+"125" "Kivimäki, Samuli" "Sport" "Vaasa, FIN" "FIN" 1988-08-29 30 "187" "92" "R" 8 1988 27 16
+"126" "Kiviranta, Joel" "Sport" "Vantaa, FIN" "FIN" 1996-03-23 22 "179" "80" "L" 3 1996 19 16
+"127" "Koho, Ville" "SaiPa" "Imatra, FIN" "FIN" 1982-02-27 36 "177" "84" "L" 2 1982 33 16
+"128" "Koivisto, Henrik" "Sport" "Kerava, FIN" "FIN" 1990-04-09 28 "180" "82" "L" 4 1990 25 16
+"129" "Koivisto, Juha" "HPK" "Vantaa, FIN" "FIN" 1984-05-04 34 "179" "85" "R" 5 1984 31 16
+"130" "Koivisto, Kimi*" "Pelicans" "Heinola, FIN" "FIN" 1992-12-31 25 "181" "82" "L" 12 1992 23 16
+"131" "Koivisto, Miika" "Lukko" "Vaasa, FIN" "FIN" 1990-07-20 28 "184" "88" "L" 7 1990 25 16
+"132" "Koivisto, Mika" "KooKoo" "Kiiminki, FIN" "FIN" 1992-06-05 26 "180" "78" "L" 6 1992 23 16
+"133" "Koivisto, Toni" "Lukko" "Ylitornio, FIN" "FIN" 1982-11-05 36 "185" "87" "L" 11 1982 33 16
+"134" "Koivistoinen, Eetu*" "Lukko" "Tampere, FIN" "FIN" 1995-07-13 23 "189" "95" "L" 7 1995 20 16
+"135" "Koivula, Otto*" "Ilves" "Nokia, FIN" "FIN" 1998-09-01 20 "193" "100" "L" 9 1998 17 16
+"136" "Kojo, Markus*" "TPS" "Noormarkku, FIN" "FIN" 1994-03-30 24 "194" "101" "L" 3 1994 21 16
+"137" "Kokkala, Lassi" "Sport" "Turku, FIN" "FIN" 1989-03-20 29 "187" "92" "L" 3 1989 26 16
+"138" "Kolehmainen, Janne" "JYP" "Lappeeranta, FIN" "FIN" 1986-03-22 32 "190" "101" "L" 3 1986 29 16
+"139" "Komulainen, Joonas" "Sport" "Kuhmo, FIN" "FIN" 1990-06-01 28 "165" "79" "L" 6 1990 25 16
+"140" "Komulainen, Mikko" "KalPa" "-" "FIN" 1994-03-04 24 "178" "77" "L" 3 1994 21 16
+"141" "Koponen, Marlo" "KooKoo" "Imatra, FIN" "FIN" 1986-12-13 31 "185" "85" "L" 12 1986 29 16
+"142" "Korhonen, Riku*" "KalPa" "-" "FIN" 1996-02-21 22 "179" "75" "R" 2 1996 19 16
+"143" "Koskiranta, Tero" "Sport" "Paimio, FIN" "FIN" 1984-06-18 34 "186" "94" "L" 6 1984 31 16
+"144" "Kukkonen, Mikko" "Blues" "Siilinjärvi, FIN" "FIN" 1988-01-19 30 "184" "84" "L" 1 1988 27 16
+"145" "Kukkonen, Lasse" "Kärpät" "Oulu, FIN" "FIN" 1981-09-18 37 "183" "85" "L" 9 1981 34 16
+"146" "Kulmala, Arttu*" "Ässät" "-" "FIN" 1997-01-08 21 "184" "73" "L" 1 1997 18 16
+"147" "Kuokkanen, Janne" "Kärpät" "-" "FIN" 1998-05-25 20 "180" "77" "L" 5 1998 17 16
+"148" "Kuparinen, Matti" "Ässät" "Pori, FIN" "FIN" 1984-10-16 34 "180" "94" "R" 10 1984 31 16
+"149" "Kurki, Mikael" "KooKoo" "Helsinki, FIN" "FIN" 1987-01-13 31 "180" "85" "L" 1 1987 28 16
+"150" "Kuronen, Mikael" "SaiPa" "Tampere, FIN" "FIN" 1992-03-14 26 "182" "77" "R" 3 1992 23 16
+"151" "Kuukka, Mikko+" "Blues" "Hämeenkyrö, FIN" "FIN" 1985-11-03 33 "193" "92" "L" 11 1985 30 16
+"152" "Kuusela, Kristian" "Tappara" "Seinäjoki, FIN" "FIN" 1983-02-19 35 "175" "84" "R" 2 1983 32 16
+"153" "Kähkönen, Kaapo*" "Blues" "Helsinki, FIN" "FIN" 1996-08-16 22 "187" "98" "L" 8 1996 19 16
+"154" "Kärki, Jarno" "Ässät" "Pori, FIN" "FIN" 1994-10-13 24 "194" "97" "L" 10 1994 21 16
+"155" "Körkkö, Tomi" "Sport" "Oulu, FIN" "FIN" 1991-03-26 27 "182" "82" "L" 3 1991 24 16
+"156" "Laakso, Aleksi" "Sport" "Seinäjoki, FIN" "FIN" 1990-03-16 28 "181" "84" "L" 3 1990 25 16
+"157" "Laakso, Leevi*" "Sport" "Kuopio, FIN" "FIN" 1998-06-12 20 "183" "76" "L" 6 1998 17 16
+"158" "Laakso, Tapio" "Ilves" "Rymättylä, FIN" "FIN" 1985-06-28 33 "183" "90" "L" 6 1985 30 16
+"159" "Laatikainen, Arto" "Kärpät" "Espoo, FIN" "FIN" 1980-05-24 38 "181" "83" "L" 5 1980 35 16
+"160" "Lahti, Janne" "Lukko" "Riihimäki, FIN" "FIN" 1982-07-20 36 "189" "91" "L" 7 1982 33 16
+"161" "Lahti, Miika" "JYP" "Konnevesi, FIN" "FIN" 1987-02-06 31 "188" "100" "L" 2 1987 28 16
+"162" "Lahtinen, Timi" "Blues" "Helsinki, FIN" "FIN" 1995-01-06 23 "190" "93" "L" 1 1995 20 16
+"163" "Laine, Patrik*" "Tappara" "-" "FIN" 1998-04-19 20 "194" "91" "R" 4 1998 17 16
+"164" "Lajunen, Jani" "Tappara" "Espoo, FIN" "FIN" 1990-06-16 28 "189" "97" "L" 6 1990 25 16
+"165" "Lamberg, Matti" "HIFK" "Kiiminki, FIN" "FIN" 1993-01-06 25 "180" "80" "R" 1 1993 22 16
+"166" "Lammassaari, Petri" "KooKoo" "Eurajoki, FIN" "FIN" 1985-08-06 33 "178" "78" "R" 8 1985 30 16
+"167" "Lankinen, Kevin" "HIFK" "Helsinki, FIN" "FIN" 1995-04-28 23 "186" "82" "L" 4 1995 20 16
+"168" "Lappalainen, Lasse" "SaiPa" "Kuopio, FIN" "FIN" 1989-06-07 29 "190" "94" "L" 6 1989 26 16
+"169" "Lassila, Teemu" "TPS" "Helsinki, FIN" "FIN" 1983-03-26 35 "183" "84" "L" 3 1983 32 16
+"170" "Latvala, Jan" "Pelicans" "Jyväskylä, FIN" "FIN" 1972-06-10 46 "178" "81" "L" 6 1972 43 16
+"171" "Lehikoinen, Esa" "Sport" "-" "FIN" 1986-04-17 32 "181" "90" "L" 4 1986 29 16
+"172" "Lehtivuori, Joonas+" "HPK" "Pirkkala, FIN" "FIN" 1988-07-19 30 "183" "81" "L" 7 1988 27 16
+"173" "Lehtonen, Antti+" "Kärpät" "Jyväskylä, FIN" "FIN" 1993-08-06 25 "183" "80" "L" 8 1993 22 16
+"174" "Lehtonen, Jussi*" "Ässät" "-" "FIN" 1995-09-05 23 "180" "70" "L" 9 1995 20 16
+"175" "Lehtonen, Mikko" "KooKoo" "Turku, FIN" "FIN" 1994-01-16 24 "182" "85" "L" 1 1994 21 16
+"176" "Leimu, Juha" "Pelicans" "Tampere, FIN" "FIN" 1983-01-30 35 "185" "84" "L" 1 1983 32 16
+"177" "Leino, Robert" "HIFK" "Hämeenlinna, FIN" "FIN" 1993-04-14 25 "182" "83" "R" 4 1993 22 16
+"178" "Leivo, Tomi" "SaiPa" "Lappeenranta, FIN" "FIN" 1989-09-24 29 "180" "85" "L" 9 1989 26 16
+"179" "Leskinen, Otto*" "KalPa" "Pieksämäki, FIN" "FIN" 1997-02-06 21 "181" "85" "L" 2 1997 18 16
+"180" "Leskinen, Ville" "Sport" "Oulu, FIN" "FIN" 1994-02-18 24 "186" "84" "R" 2 1994 21 16
+"181" "Liedes, Heikki" "HPK" "Helsinki, FIN" "FIN" 1993-01-12 25 "186" "88" "L" 1 1993 22 16
+"182" "Lipiäinen, Valtteri*" "SaiPa" "Lappeenranta, FIN" "FIN" 1997-09-02 21 "178" "77" "R" 9 1997 18 16
+"183" "Lukka, Santeri*" "KalPa" "Pori, FIN" "FIN" 1991-07-19 27 "180" "86" "R" 7 1991 24 16
+"184" "Luoma, Mikko" "JYP" "-" "FIN" 1976-06-22 42 "193" "94" "L" 6 1976 39 16
+"185" "Luttinen, Arttu" "HIFK" "Helsinki, FIN" "FIN" 1983-09-03 35 "184" "89" "L" 9 1983 32 16
+"186" "Lyytinen, Joonas" "KalPa" "Espoo, FIN" "FIN" 1995-04-04 23 "183" "72" "L" 4 1995 20 16
+"187" "Lähde, Nestori" "Lukko" "Nokia, FIN" "FIN" 1989-08-12 29 "182" "93" "L" 8 1989 26 16
+"188" "Lähteenmäki, Sami" "Lukko" "Riihimäki, FIN" "FIN" 1989-09-19 29 "185" "88" "L" 9 1989 26 16
+"189" "Lämsä, Teemu*" "TPS" "Turku, FIN" "FIN" 1996-02-06 22 "191" "93" "R" 2 1996 19 16
+"190" "Löfman, Anssi" "JYP" "Lappeenranta, FIN" "FIN" 1987-06-29 31 "177" "81" "L" 6 1987 28 16
+"191" "Maalahti, Kalle" "SaiPa" "Lappeenranta, FIN" "FIN" 1991-04-30 27 "178" "85" "L" 4 1991 24 16
+"192" "Maarnela, Henry*" "SaiPa" "Lappeenranta, FIN" "FIN" 1996-04-12 22 "174" "68" "L" 4 1996 19 16
+"193" "Makkonen, Jussi" "TPS" "Turku, FIN" "FIN" 1985-04-24 33 "193" "91" "L" 4 1985 30 16
+"194" "Malinen, Jarkko" "KooKoo" "Kuopio, FIN" "FIN" 1988-03-17 30 "188" "84" "L" 3 1988 27 16
+"195" "Malmivaara, Olli" "TPS" "Kajaani, FIN" "FIN" 1982-03-13 36 "198" "104" "L" 3 1982 33 16
+"196" "Manelius, Nico" "Pelicans" "Vantaa, FIN" "FIN" 1991-03-12 27 "182" "88" "L" 3 1991 24 16
+"197" "Mankinen, Jesse" "KalPa" "Lappeenranta, FIN" "FIN" 1991-05-20 27 "177" "82" "R" 5 1991 24 16
+"198" "Manninen, Oskari" "Sport" "Helsinki, FIN" "FIN" 1991-04-22 27 "181" "85" "L" 4 1991 24 16
+"199" "Manninen, Sakari" "Kärpät" "Oulu, FIN" "FIN" 1992-02-10 26 "170" "75" "L" 2 1992 23 16
+"200" "Marjamäki, Masi" "Ässät" "Pori, FIN" "FIN" 1985-01-16 33 "188" "92" "L" 1 1985 30 16
+"201" "Markkanen, Jussi" "SaiPa" "Imatra, FIN" "FIN" 1975-05-08 43 "184" "84" "L" 5 1975 40 16
+"202" "Marttinen, Jyri+" "Ässät" "Jyväskylän mlk, FIN" "FIN" 1982-09-01 36 "183" "88" "L" 9 1982 33 16
+"203" "Meskanen, Ville*" "Ilves" "Tampere, FIN" "FIN" 1995-10-02 23 "185" "82" "R" 10 1995 20 16
+"204" "Mieho, Panu*" "HIFK" "Helsinki, FIN" "FIN" 1995-01-24 23 "186" "84" "L" 1 1995 20 16
+"205" "Miettinen, Antti" "HPK" "Hämeenlinna, FIN" "FIN" 1980-07-03 38 "182" "86" "R" 7 1980 35 16
+"206" "Mikkola, Ilkka" "Lukko" "Oulu, FIN" "FIN" 1979-01-18 39 "181" "89" "L" 1 1979 36 16
+"207" "Mikkola, Niko*" "KalPa" "Kiiminki, FIN" "FIN" 1996-04-27 22 "196" "90" "L" 4 1996 19 16
+"208" "Moberg, Sebastian" "HIFK" "-" "FIN" 1996-02-24 22 "181" "78" "L" 2 1996 19 16
+"209" "Moisio, Patrik" "TPS" "Turku, FIN" "FIN" 1992-02-04 26 "187" "92" "L" 2 1992 23 16
+"210" "Monto, Joona*" "HPK" "-" "FIN" 1994-06-22 24 "185" "87" "L" 6 1994 21 16
+"211" "Mustonen, Aleksi" "Ilves" "Helsinki, FIN" "FIN" 1995-03-28 23 "175" "75" "L" 3 1995 20 16
+"212" "Mutanen, Sami" "KalPa" "Joensuu, FIN" "FIN" 1984-09-20 34 "183" "93" "L" 9 1984 31 16
+"213" "Myllyniemi, Jere" "HPK" "Kangasala, FIN" "FIN" 1983-01-24 35 "185" "84" "L" 1 1983 32 16
+"214" "Mäenalanen, Saku" "Kärpät" "Kemi, FIN" "FIN" 1994-05-29 24 "192" "84" "L" 5 1994 21 16
+"215" "Mäkelä, Aleksi" "Ilves" "Tampere, FIN" "FIN" 1995-02-08 23 "188" "93" "L" 2 1995 20 16
+"216" "Mäkinen, Atte" "Tappara" "Tampere, FIN" "FIN" 1995-05-17 23 "191" "92" "R" 5 1995 20 16
+"217" "Mäkinen, Konsta" "Ilves" "Pirkkala, FIN" "FIN" 1992-01-19 26 "175" "78" "L" 1 1992 23 16
+"218" "Mäkinen, William*" "SaiPa" "Jämsänkoski, FIN" "FIN" 1995-06-19 23 "183" "79" "L" 6 1995 20 16
+"219" "Mäntylä, Tuukka" "Tappara" "Tampere, FIN" "FIN" 1981-05-25 37 "171" "85" "L" 5 1981 34 16
+"220" "Nenonen, Markus" "JYP" "Jämsänkoski, FIN" "FIN" 1992-10-29 26 "187" "94" "L" 10 1992 23 16
+"221" "Niemelä, Joonas*" "Blues" "Espoo, FIN" "FIN" 1997-01-14 21 "180" "82" "L" 1 1997 18 16
+"222" "Niemelä, Mikko" "Kärpät" "Oulu, FIN" "FIN" 1990-10-09 28 "187" "90" "R" 10 1990 25 16
+"223" "Niemi, Mika" "Kärpät" "Pori, FIN" "FIN" 1988-03-10 30 "186" "84" "L" 3 1988 27 16
+"224" "Niemi, Jyri+" "Ilves" "Hämeenkyrö, FIN" "FIN" 1990-06-15 28 "188" "94" "L" 6 1990 25 16
+"225" "Niemi, Timo*" "Sport" "-" "FIN" 1992-09-16 26 "185" "83" "L" 9 1992 23 16
+"226" "Nieminen, Jani" "SaiPa" "Helsinki, FIN" "FIN" 1987-07-28 31 "178" "87" "L" 7 1987 28 16
+"227" "Nieminen, Otto*" "TPS" "Somero, FIN" "FIN" 1996-05-08 22 "175" "87" "L" 5 1996 19 16
+"228" "Nikkilä, Petteri" "HPK" "Hämeenlinna, FIN" "FIN" 1992-07-27 26 "180" "83" "L" 7 1992 23 16
+"229" "Nikko, Aleksi*" "Sport" "-" "FIN" 1997-07-22 21 "187" "94" "L" 7 1997 18 16
+"230" "Nikko, Joni" "KalPa" "Vaasa, FIN" "FIN" 1994-05-31 24 "187" "90" "L" 5 1994 21 16
+"231" "Niku, Sami*+" "JYP" "Haapavesi, FIN" "FIN" 1996-10-10 22 "183" "80" "L" 10 1996 19 16
+"232" "Niskala, Janne" "Lukko" "Västerås, SWE" "FIN" 1981-09-22 37 "183" "91" "L" 9 1981 34 16
+"233" "Nisula, Matias*" "Blues" "-" "FIN" 1996-03-15 22 "185" "82" "L" 3 1996 19 16
+"234" "Nokelainen, Petteri+" "SaiPa" "-" "FIN" 1986-01-16 32 "185" "86" "L" 1 1986 29 16
+"235" "Nummelin, Petteri" "TPS" "Turku, FIN" "FIN" 1972-11-25 46 "178" "88" "L" 11 1972 43 16
+"236" "Nurmi, Teemu" "Lukko" "Tampere, FIN" "FIN" 1985-02-24 33 "186" "92" "R" 2 1985 30 16
+"237" "Nutivaara, Markus+" "Kärpät" "-" "FIN" 1994-06-06 24 "183" "79" "L" 6 1994 21 16
+"238" "Nuto, Kasperi*+" "Ässät" "Lieksa, FIN" "FIN" 1995-08-31 23 "174" "69" "L" 8 1995 20 16
+"239" "Nuutinen, Mikko*" "KalPa" "Kuopio, FIN" "FIN" 1990-10-06 28 "173" "82" "R" 10 1990 25 16
+"240" "Nykopp, Thomas" "HIFK" "Helsinki, FIN" "FIN" 1993-03-06 25 "190" "90" "L" 3 1993 22 16
+"241" "Nyqvist, Julius" "KooKoo" "Vantaa, FIN" "FIN" 1992-10-29 26 "180" "83" "R" 10 1992 23 16
+"242" "Näppilä, Jarkko" "Ilves" "Tampere, FIN" "FIN" 1988-07-06 30 "185" "85" "L" 7 1988 27 16
+"243" "Nättinen, Joonas" "JYP" "Jämsä, FIN" "FIN" 1991-01-03 27 "189" "88" "R" 1 1991 24 16
+"244" "Nättinen, Topi" "JYP" "Jyväskylä, FIN" "FIN" 1994-04-01 24 "178" "86" "L" 4 1994 21 16
+"245" "Ojamäki, Niko" "Ässät" "Pori, FIN" "FIN" 1995-06-17 23 "180" "83" "R" 6 1995 20 16
+"246" "Paajanen, Otto" "HPK" "Loppi, FIN" "FIN" 1992-09-13 26 "180" "87" "L" 9 1992 23 16
+"247" "Parikka, Jarkko*" "Ilves" "Imatra, FIN" "FIN" 1997-09-06 21 "182" "85" "L" 9 1997 18 16
+"248" "Partanen, Mika" "HIFK" "Helsinki, FIN" "FIN" 1992-10-18 26 "188" "95" "L" 10 1992 23 16
+"249" "Pekkala, Sami*" "Kärpät" "-" "FIN" 1995-09-12 23 "170" "70" "L" 9 1995 20 16
+"250" "Pelli, Arttu*" "KooKoo" "Kouvola, FIN" "FIN" 1996-08-22 22 "176" "78" "R" 8 1996 19 16
+"251" "Peltola, Jukka" "Tappara" "Tampere, FIN" "FIN" 1987-08-26 31 "185" "85" "L" 8 1987 28 16
+"252" "Peltola, Niko" "Sport" "Huittinen, FIN" "FIN" 1990-06-01 28 "187" "91" "L" 6 1990 25 16
+"253" "Peltonen, Tomi" "KooKoo" "Tampere, FIN" "FIN" 1987-01-22 31 "179" "80" "L" 1 1987 28 16
+"254" "Pentikäinen, Atte" "Kärpät" "Juupajoki, FIN" "FIN" 1982-12-13 35 "194" "105" "L" 12 1982 33 16
+"255" "Perhonen, Samu" "KalPa" "Jämsänkoski, FIN" "FIN" 1993-03-07 25 "196" "89" "L" 3 1993 22 16
+"256" "Pietilä, Juha-Pekka" "Pelicans" "Hollola, FIN" "FIN" 1991-04-30 27 "191" "90" "R" 4 1991 24 16
+"257" "Pietilä, Misa*" "SaiPa" "-" "FIN" 1994-08-28 24 "184" "82" "L" 8 1994 21 16
+"258" "Pihlman, Tuomas" "JYP" "Espoo, FIN" "FIN" 1982-11-13 36 "188" "94" "L" 11 1982 33 16
+"259" "Piipponen, Topi*" "KalPa" "Siilinjärvi, FIN" "FIN" 1997-05-02 21 "182" "84" "L" 5 1997 18 16
+"260" "Piitulainen, Jesper" "Lukko" "Savonlinna, FIN" "FIN" 1991-08-13 27 "172" "78" "R" 8 1991 24 16
+"261" "Pikkarainen, Ilkka" "TPS" "Sonkajärvi, FIN" "FIN" 1981-04-19 37 "188" "94" "R" 4 1981 34 16
+"262" "Pirnes, Esa" "Kärpät" "-" "FIN" 1977-04-01 41 "184" "84" "L" 4 1977 38 16
+"263" "Pitkänen, Ilmari" "Blues" "Viljakkala, FIN" "FIN" 1990-07-18 28 "182" "87" "L" 7 1990 25 16
+"264" "Pitkänen, Joni+" "Kärpät" "-" "FIN" 1983-09-19 35 "190" "95" "L" 9 1983 32 16
+"265" "Pitkänen, Miikka*" "KalPa" "Kuopio, FIN" "FIN" 1996-04-27 22 "177" "72" "L" 4 1996 19 16
+"266" "Puhakka, Janne*" "Blues" "-" "FIN" 1995-02-24 23 "183" "82" "L" 2 1995 20 16
+"267" "Pukka, Mikko" "Sport" "Suodenniemi, FIN" "FIN" 1982-09-06 36 "185" "94" "L" 9 1982 33 16
+"268" "Puljujärvi, Jesse" "Kärpät" "-" "FIN" 1998-05-07 20 "190" "89" "R" 5 1998 17 16
+"269" "Pulli, Matias*" "Blues" "Raisio, FIN" "FIN" 1995-03-08 23 "175" "70" "R" 3 1995 20 16
+"270" "Pulli, Juuso" "JYP" "Kouvola, FIN" "FIN" 1991-08-30 27 "185" "90" "L" 8 1991 24 16
+"271" "Puustinen, Juuso" "HIFK" "Kuopio, FIN" "FIN" 1988-04-05 30 "187" "88" "R" 4 1988 27 16
+"272" "Pyörälä, Mika" "Kärpät" "Oulu, FIN" "FIN" 1981-07-13 37 "182" "81" "L" 7 1981 34 16
+"273" "Pöyhönen, Marko" "Pelicans" "Hollola, FIN" "FIN" 1987-09-10 31 "180" "84" "L" 9 1987 28 16
+"274" "Rajala, Juuso" "KooKoo" "Tampere, FIN" "FIN" 1988-08-27 30 "180" "83" "L" 8 1988 27 16
+"275" "Rajala, Ville" "Sport" "-" "FIN" 1989-06-23 29 "187" "91" "L" 6 1989 26 16
+"276" "Rajaniemi, Sami" "Kärpät" "Oulainen, FIN" "FIN" 1992-08-20 26 "184" "83" "L" 8 1992 23 16
+"277" "Ramstedt, Teemu" "HIFK" "Helsinki, FIN" "FIN" 1987-12-09 30 "180" "87" "L" 12 1987 28 16
+"278" "Rantamäki, Jesse*" "Sport" "Seinäjoki, FIN" "FIN" 1996-08-12 22 "183" "92" "R" 8 1996 19 16
+"279" "Rasilainen, Samuli*" "Blues" "-" "FIN" 1996-06-21 22 "187" "91" "L" 6 1996 19 16
+"280" "Rask, Joonas" "HIFK" "Savonlinna, FIN" "FIN" 1990-03-24 28 "180" "84" "R" 3 1990 25 16
+"281" "Rauhala, Otto" "Tappara" "Ylöjärvi, FIN" "FIN" 1995-04-12 23 "180" "90" "L" 4 1995 20 16
+"282" "Rautiainen, Kimmo*" "Tappara" "Savonlinna, FIN" "FIN" 1998-03-09 20 "178" "72" "L" 3 1998 17 16
+"283" "Rautiainen, Teemu+" "Ilves" "Nurmijärvi, FIN" "FIN" 1992-03-13 26 "169" "75" "L" 3 1992 23 16
+"284" "Rautio, Tomi*" "KooKoo" "Kouvola, FIN" "FIN" 1996-03-18 22 "182" "83" "L" 3 1996 19 16
+"285" "Rekonen, Aleksi" "Pelicans" "Helsinki, FIN" "FIN" 1993-07-23 25 "181" "87" "L" 7 1993 22 16
+"286" "Repo, Sebastian*" "Pelicans" "Lahti, FIN" "FIN" 1996-06-23 22 "189" "94" "R" 6 1996 19 16
+"287" "Riekkinen, Joonas" "Ilves" "Varpaisjärvi, FIN" "FIN" 1987-08-11 31 "181" "86" "L" 8 1987 28 16
+"288" "Riikola, Juuso" "KalPa" "Joensuu, FIN" "FIN" 1993-11-09 25 "184" "86" "L" 11 1993 22 16
+"289" "Riikola, Simo-Pekka" "SaiPa" "Joensuu, FIN" "FIN" 1992-02-03 26 "186" "90" "R" 2 1992 23 16
+"290" "Rinne, Rasmus" "Lukko" "Hyvinkää, FIN" "FIN" 1990-07-08 28 "195" "95" "L" 7 1990 25 16
+"291" "Riska, Erik" "Sport" "Pietarsaari, FIN" "FIN" 1989-05-16 29 "188" "92" "L" 5 1989 26 16
+"292" "Riska, Filip" "Lukko" "Pietarsaari, FIN" "FIN" 1985-05-13 33 "184" "91" "L" 5 1985 30 16
+"293" "Rissanen, Jaakko+" "KalPa" "Kuopio, FIN" "FIN" 1989-11-12 29 "182" "85" "L" 11 1989 26 16
+"294" "Ritamäki, Janne" "Pelicans" "Heinola, FIN" "FIN" 1986-08-13 32 "185" "86" "L" 8 1986 29 16
+"295" "Roine, Miika*" "Pelicans" "Jyväskylä, FIN" "FIN" 1991-12-08 26 "180" "80" "L" 12 1991 24 16
+"296" "Ronkainen, Taneli*" "Kärpät" "Kuusamo, FIN" "FIN" 1995-03-28 23 "183" "79" "L" 3 1995 20 16
+"297" "Rouhiainen, Jere*" "Tappara" "Tampere, FIN" "FIN" 1996-01-16 22 "182" "78" "L" 1 1996 19 16
+"298" "Rukajärvi, Roni*" "Pelicans" "Oulu, FIN" "FIN" 1993-09-03 25 "183" "82" "R" 9 1993 22 16
+"299" "Ruohomaa, Mikael" "KalPa" "Alastaro, FIN" "FIN" 1988-11-17 30 "185" "82" "L" 11 1988 27 16
+"300" "Ruokonen, Miro*" "HPK" "Forssa, FIN" "FIN" 1996-03-27 22 "182" "87" "L" 3 1996 19 16
+"301" "Ruokonen, Ville*" "SaiPa" "Lappeenranta, FIN" "FIN" 1998-03-13 20 "182" "87" "L" 3 1998 17 16
+"302" "Ruotsalainen, Arttu*" "Ässät" "Oulu, FIN" "FIN" 1997-10-29 21 "173" "81" "L" 10 1997 18 16
+"303" "Ruuskanen, Waltteri*" "KalPa" "Kuopio, FIN" "FIN" 1997-07-23 21 "192" "95" "R" 7 1997 18 16
+"304" "Ruusu, Markus" "JYP" "Jämsä, FIN" "FIN" 1997-08-23 21 "188" "78" "L" 8 1997 18 16
+"305" "Rämö, Juuso*" "Ilves" "-" "FIN" 1994-05-07 24 "187" "87" "L" 5 1994 21 16
+"306" "Saarela, Aleksi" "Ässät" "Helsinki, FIN" "FIN" 1997-01-07 21 "178" "85" "L" 1 1997 18 16
+"307" "Saarelainen, Miro-Pekka*" "HIFK" "Vantaa, FIN" "FIN" 1994-04-26 24 "177" "80" "R" 4 1994 21 16
+"308" "Saari, Santeri*" "HPK" "Helsinki, FIN" "FIN" 1994-10-18 24 "186" "87" "L" 10 1994 21 16
+"309" "Saari, Micke*+" "Blues" "Kirkkonummi, FIN" "FIN" 1994-04-19 24 "185" "81" "L" 4 1994 21 16
+"310" "Saha, Mikael" "Ässät" "Loimaa, FIN" "FIN" 1995-03-05 23 "188" "84" "L" 3 1995 20 16
+"311" "Sailio, Jari" "Kärpät" "Hyvinkää, FIN" "FIN" 1986-03-18 32 "179" "84" "L" 3 1986 29 16
+"312" "Salmela, Saku" "Ilves" "Helsinki, FIN" "FIN" 1990-05-16 28 "176" "84" "L" 5 1990 25 16
+"313" "Salmi, Juuso" "HIFK" "Helsinki, FIN" "FIN" 1991-07-15 27 "187" "90" "L" 7 1991 24 16
+"314" "Salmio, Mikko" "JYP" "Jämsä, FIN" "FIN" 1991-07-13 27 "192" "92" "L" 7 1991 24 16
+"315" "Salo, Niklas*" "TPS" "Somero, FIN" "FIN" 1994-07-08 24 "165" "69" "L" 7 1994 21 16
+"316" "Salo, Robin*" "Sport" "Espoo, FIN" "FIN" 1998-10-13 20 "185" "86" "L" 10 1998 17 16
+"317" "Salonen, Aleksi" "Tappara" "Muurame, FIN" "FIN" 1993-02-03 25 "179" "81" "R" 2 1993 22 16
+"318" "Sammalkangas, Tapio" "Ässät" "Tampere, FIN" "FIN" 1980-03-16 38 "180" "92" "L" 3 1980 35 16
+"319" "Sandell, Sami+" "Ilves" "Nokia, FIN" "FIN" 1987-03-01 31 "188" "94" "L" 3 1987 28 16
+"320" "Saravo, Pekka" "Tappara" "Rovaniemi, FIN" "FIN" 1979-11-13 39 "187" "92" "L" 11 1979 36 16
+"321" "Savilahti, Eero" "Ilves" "Tampere, FIN" "FIN" 1992-08-10 26 "186" "89" "L" 8 1992 23 16
+"322" "Savinainen, Veli-Matti" "Tappara" "Espoo, FIN" "FIN" 1986-01-05 32 "182" "82" "L" 1 1986 29 16
+"323" "Seppälä, Jere" "Blues" "Kemi, FIN" "FIN" 1993-01-04 25 "174" "72" "L" 1 1993 22 16
+"324" "Setänen, Oskari+" "TPS" "Eura, FIN" "FIN" 1994-04-28 24 "184" "80" "L" 4 1994 21 16
+"325" "Siiki, Oskari" "Blues" "Turku, FIN" "FIN" 1995-05-05 23 "182" "84" "L" 5 1995 20 16
+"326" "Siikonen, Miska*" "Pelicans" "Tampere, FIN" "FIN" 1996-05-12 22 "190" "92" "L" 5 1996 19 16
+"327" "Sillanpää, Severi" "HPK" "Pori, FIN" "FIN" 1988-02-07 30 "182" "82" "L" 2 1988 27 16
+"328" "Similä, Petteri" "KalPa" "-" "FIN" 1990-04-09 28 "196" "94" "L" 4 1990 25 16
+"329" "Sipiläinen, Olli" "Lukko" "Lappeenranta, FIN" "FIN" 1977-07-24 41 "178" "85" "L" 7 1977 38 16
+"330" "Sointu, Matias" "Ilves" "Tampere, FIN" "FIN" 1990-02-10 28 "178" "76" "L" 2 1990 25 16
+"331" "Somervuori, Eero" "HPK" "Järvenpää, FIN" "FIN" 1979-02-07 39 "176" "80" "R" 2 1979 36 16
+"332" "Sopanen, Eetu*" "Pelicans" "Kouvola, FIN" "FIN" 1996-04-24 22 "196" "98" "R" 4 1996 19 16
+"333" "Sopanen, Vili" "Pelicans" "Valkeala, FIN" "FIN" 1987-10-21 31 "191" "99" "R" 10 1987 28 16
+"334" "Strömberg, Kim+" "SaiPa" "Helsinki, FIN" "FIN" 1987-12-08 30 "190" "93" "L" 12 1987 28 16
+"335" "Sund, Joel*" "JYP" "Jämsä, FIN" "FIN" 1993-03-24 25 "185" "95" "R" 3 1993 22 16
+"336" "Sundfors, Niklas*" "Sport" "Pietarsaari, FIN" "FIN" 1995-05-08 23 "178" "81" "L" 5 1995 20 16
+"337" "Suomela, Antti*" "Blues" "Espoo, FIN" "FIN" 1994-03-17 24 "183" "80" "L" 3 1994 21 16
+"338" "Suomi, Eemeli*" "Ilves" "Tampere, FIN" "FIN" 1995-12-04 22 "177" "83" "L" 12 1995 20 16
+"339" "Suoranta, Simon+" "Kärpät" "Vaasa, FIN" "FIN" 1992-05-21 26 "190" "94" "L" 5 1992 23 16
+"340" "Suuronen, Toni*" "Lukko" "Hamina, FIN" "FIN" 1995-06-30 23 "183" "83" "L" 6 1995 20 16
+"341" "Suutari, Joni" "SaiPa" "Lappeenranta, FIN" "FIN" 1992-04-17 26 "177" "79" "L" 4 1992 23 16
+"342" "Taimi, Tommi" "HIFK" "Pori, FIN" "FIN" 1990-09-21 28 "180" "92" "R" 9 1990 25 16
+"343" "Taipalus, Lauri" "HIFK" "Alavus, FIN" "FIN" 1988-01-14 30 "182" "84" "L" 1 1988 27 16
+"344" "Tallberg, Teemu" "Sport" "Helsinki, FIN" "FIN" 1991-05-13 27 "186" "86" "L" 5 1991 24 16
+"345" "Tammela, Jonne" "KalPa" "-" "FIN" 1997-08-05 21 "180" "82" "L" 8 1997 18 16
+"346" "Tamminen, Henri*" "HIFK" "Espoo, FIN" "FIN" 1993-04-22 25 "190" "92" "R" 4 1993 22 16
+"347" "Tarkki, Tuomas" "JYP" "Rauma, FIN" "FIN" 1980-02-28 38 "193" "92" "L" 2 1980 35 16
+"348" "Tarkki, Iiro+" "Kärpät" "-" "FIN" 1985-07-01 33 "189" "83" "L" 7 1985 30 16
+"349" "Tavi, Janne" "JYP" "Helsinki, FIN" "FIN" 1989-09-13 29 "178" "82" "L" 9 1989 26 16
+"350" "Teppo, Miihkali" "HIFK" "Helsinki, FIN" "FIN" 1992-12-28 25 "189" "87" "L" 12 1992 23 16
+"351" "Tiivola, Peter" "Lukko" "Helsinki, FIN" "FIN" 1993-09-05 25 "192" "97" "L" 9 1993 22 16
+"352" "Tikka, Tommi*" "Sport" "Helsinki, FIN" "FIN" 1995-08-28 23 "190" "90" "L" 8 1995 20 16
+"353" "Tikkanen, Harri" "TPS" "Lappeenranta, FIN" "FIN" 1981-06-02 37 "175" "80" "R" 6 1981 34 16
+"354" "Timonen, Jussi" "KalPa" "Kuopio, FIN" "FIN" 1983-06-29 35 "183" "90" "L" 6 1983 32 16
+"355" "Toivonen, Hannu" "Ilves" "Hattula, FIN" "FIN" 1984-05-18 34 "190" "93" "L" 5 1984 31 16
+"356" "Tommila, Juho" "Lukko" "Lappi TL, FIN" "FIN" 1993-02-09 25 "184" "86" "R" 2 1993 22 16
+"357" "Tornberg, Reko*" "Kärpät" "-" "FIN" 1995-02-04 23 "182" "84" "R" 2 1995 20 16
+"358" "Torpström, Eetu" "KalPa" "-" "FIN" 1997-09-17 21 "183" "83" "R" 9 1997 18 16
+"359" "Tukonen, Lauri+" "TPS" "Hyvinkää, FIN" "FIN" 1986-09-01 32 "188" "90" "R" 9 1986 29 16
+"360" "Tuominen, Henri" "Ilves" "Masku, FIN" "FIN" 1991-09-10 27 "193" "90" "L" 9 1991 24 16
+"361" "Tuomisto, Tomi" "HIFK" "Nurmijärvi, FIN" "FIN" 1990-05-04 28 "187" "94" "L" 5 1990 25 16
+"362" "Tuppurainen, Jani" "JYP" "Oulu, FIN" "FIN" 1980-03-30 38 "180" "80" "L" 3 1980 35 16
+"363" "Tuulola, Eetu*" "HPK" "Hämeenlinna, FIN" "FIN" 1998-03-17 20 "190" "98" "R" 3 1998 17 16
+"364" "Tuulola, Joni" "HPK" "Hämeenlinna, FIN" "FIN" 1996-01-01 22 "188" "90" "L" 1 1996 19 16
+"365" "Tyrväinen, Juhani" "Pelicans" "Seinäjoki, FIN" "FIN" 1990-09-11 28 "181" "87" "L" 9 1990 25 16
+"366" "Uusitalo, Ville" "Ässät" "Espoo, FIN" "FIN" 1979-07-06 39 "181" "79" "L" 7 1979 36 16
+"367" "Vaakanainen, Urho*+" "Blues" "Joensuu, FIN" "FIN" 1999-01-01 19 "185" "85" "L" 1 1999 16 16
+"368" "Vahalahti, Ville" "Lukko" "Parainen, FIN" "FIN" 1977-11-07 41 "183" "91" "L" 11 1977 38 16
+"369" "Vainikainen, Ville*" "SaiPa" "Kuopio, FIN" "FIN" 1994-01-26 24 "180" "85" "L" 1 1994 21 16
+"370" "Vainio, Juuso+" "JYP" "Hämeenlinna, FIN" "FIN" 1994-09-06 24 "185" "90" "R" 9 1994 21 16
+"371" "Vainio, Olli*" "Ilves" "Tampere, FIN" "FIN" 1994-04-23 24 "185" "82" "R" 4 1994 21 16
+"372" "Vainio, Veeti*" "Blues" "Espoo, FIN" "FIN" 1997-06-16 21 "189" "84" "R" 6 1997 18 16
+"373" "Vainiola, Ville-Vesa" "TPS" "Rauma, FIN" "FIN" 1985-04-02 33 "187" "90" "L" 4 1985 30 16
+"374" "Vainonen, Mikko" "Ässät" "Helsinki, FIN" "FIN" 1994-04-11 24 "190" "95" "L" 4 1994 21 16
+"375" "Vallin, Ari" "KooKoo" "-" "FIN" 1978-03-21 40 "181" "93" "L" 3 1978 37 16
+"376" "Valtonen, Julius*" "HPK" "Tuusula, FIN" "FIN" 1995-08-09 23 "190" "93" "R" 8 1995 20 16
+"377" "Vartiainen, Taavi" "Pelicans" "Lahti, FIN" "FIN" 1994-06-30 24 "187" "91" "L" 6 1994 21 16
+"378" "Varttinen, Matias*" "Ässät" "Eura, FIN" "FIN" 1995-07-19 23 "169" "69" "R" 7 1995 20 16
+"379" "Vauhkonen, Olavi" "Lukko" "Helsinki, FIN" "FIN" 1989-01-24 29 "194" "109" "R" 1 1989 26 16
+"380" "Vehviläinen, Veini*" "JYP" "Jyväskylä, FIN" "FIN" 1997-02-13 21 "184" "79" "L" 2 1997 18 16
+"381" "Veistola, Jiri" "Ilves" "Vantaa, FIN" "FIN" 1988-03-21 30 "179" "80" "R" 3 1988 27 16
+"382" "Venäläinen, Sami" "SaiPa" "Kangasala, FIN" "FIN" 1981-10-14 37 "180" "89" "R" 10 1981 34 16
+"383" "Vidgren, Aaro*" "Lukko" "Lohja, FIN" "FIN" 1997-05-30 21 "189" "84" "L" 5 1997 18 16
+"384" "Vihko, Joonas" "Ilves" "Helsinki, FIN" "FIN" 1981-04-06 37 "176" "84" "R" 4 1981 34 16
+"385" "Viitala, Henri*" "HPK" "-" "FIN" 1995-05-14 23 "195" "86" "L" 5 1995 20 16
+"386" "Viitanen, Mikko+" "Ässät" "Nurmijärvi, FIN" "FIN" 1982-02-18 36 "192" "100" "L" 2 1982 33 16
+"387" "Viksten, Nico*" "Ilves" "Tampere, FIN" "FIN" 1997-03-29 21 "183" "76" "L" 3 1997 18 16
+"388" "Viljanen, Valtteri" "Ässät" "Pori, FIN" "FIN" 1994-03-03 24 "173" "78" "R" 3 1994 21 16
+"389" "Virkkunen, Valtteri" "SaiPa" "Espoo, FIN" "FIN" 1991-02-18 27 "176" "83" "L" 2 1991 24 16
+"390" "Virta, Patrik" "TPS" "Hämeenlinna, FIN" "FIN" 1996-03-06 22 "176" "82" "R" 3 1996 19 16
+"391" "Virtanen, Jesse" "Lukko" "Rauma, FIN" "FIN" 1991-08-07 27 "180" "85" "L" 8 1991 24 16
+"392" "Virtanen, Jonne" "TPS" "Turku, FIN" "FIN" 1988-03-13 30 "197" "113" "L" 3 1988 27 16
+"393" "Virtanen, Mikko" "KooKoo" "Kouvola, FIN" "FIN" 1994-03-07 24 "184" "78" "R" 3 1994 21 16
+"394" "Virtanen, Mikko*" "JYP" "-" "FIN" 1991-06-29 27 "182" "79" "L" 6 1991 24 16
+"395" "Vittasmäki, Veli-Matti" "Ilves" "Turku, FIN" "FIN" 1990-07-03 28 "186" "93" "L" 7 1990 25 16
+"396" "Vuorisalo, Teemu" "Ässät" "Pori, FIN" "FIN" 1995-06-04 23 "179" "79" "R" 6 1995 20 16
+"397" "Vuoti, Santeri*" "HPK" "Hyvinkää, FIN" "FIN" 1995-02-01 23 "175" "85" "L" 2 1995 20 16
+"398" "Vähätalo, Julius" "TPS" "Vahto, FIN" "FIN" 1995-03-23 23 "196" "87" "L" 3 1995 20 16
+"399" "Väkelä, Jesse*" "Sport" "Vaasa, FIN" "FIN" 1995-07-09 23 "183" "85" "R" 7 1995 20 16
+"400" "Väliharju, Sami*" "Kärpät" "Oulu, FIN" "FIN" 1996-09-06 22 "190" "86" "L" 9 1996 19 16
+"401" "Välimaa, Tommi" "Ilves" "Kangasala, FIN" "FIN" 1984-01-20 34 "196" "88" "L" 1 1984 31 16
+"402" "Vänttinen, Tuomas" "Sport" "Savonlinna, FIN" "FIN" 1983-07-29 35 "176" "91" "R" 7 1983 32 16
+"403" "Västilä, Markus" "KooKoo" "-" "FIN" 1992-11-30 25 "182" "83" "L" 11 1992 23 16
+"404" "Väyrynen, Teemu*" "Blues" "Joensuu, FIN" "FIN" 1997-04-28 21 "175" "78" "L" 4 1997 18 16
+"405" "Walli, Juuso*" "Ässät" "Tampere, FIN" "FIN" 1996-07-03 22 "195" "106" "L" 7 1996 19 16
+"406" "Westermarck, Felix*" "Sport" "Espoo, FIN" "FIN" 1995-04-08 23 "186" "92" "L" 4 1995 20 16
+"407" "Westermarck, Victor" "Blues" "Espoo, FIN" "FIN" 1994-02-26 24 "188" "92" "R" 2 1994 21 16
+"408" "Yrjölä, Lassi" "Ilves" "Tampere, FIN" "FIN" 1994-07-31 24 "187" "86" "L" 7 1994 21 16
+"409" "Åsten, Micke-Max" "HIFK" "Helsinki, FIN" "FIN" 1992-06-10 26 "182" "87" "L" 6 1992 23 16
