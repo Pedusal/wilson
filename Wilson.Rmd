@@ -3,8 +3,10 @@ title: "Wilson"
 author: "Peduwan"
 date: "14 helmikuuta 2019"
 output:
-  word_document: default
+  html_document:
+    df_print: paged
   pdf_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -17,7 +19,6 @@ library(tidyr)
 library(ggplot2)
 library(scales)
 library(readxl)
-library(expss)
 ```
 
 
