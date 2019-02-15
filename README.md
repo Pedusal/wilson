@@ -1,3 +1,3 @@
 # wilson
 syntymäaikoja
-https://Pedusal.github.io/Wilson/
+https://pedusal.github.io/wilson/
