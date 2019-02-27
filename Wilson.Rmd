@@ -1,0 +1,839 @@
+---
+title: "Kuvaajia"
+author: "Petteri Salo"
+date: "26 helmikuuta 2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(knitr)
+knitr::opts_knit$set(root.dir = "\\\\ATKK/home/p/pdsalo/Desktop/Gradu")
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(scales)
+library(readxl)
+```
+
+
+```{r junioridata, echo=FALSE}
+#setwd("//ad.helsinki.fi/home/p/pdsalo/Desktop/Gradu")
+
+unique_jun <- read.table("data/unijun.txt")
+
+unique_jun$syntymakuukausi.x = factor(unique_jun$syntymakuukausi.x,levels(unique_jun$syntymakuukausi.x)[c(1,3,4,2)])
+
+unique_jun$syntymakuukausi.y = factor(unique_jun$syntymakuukausi.y,levels(unique_jun$syntymakuukausi.y)[c(1,3,4,2)])
+
+unique_jun = unique_jun %>% group_by(Sukupuoli, VVVV, syntymakuukausi.x, kausi) %>% mutate(lkm=sum(lkm.x))
+
+#str(unique_jun)
+```
+
+```{r pohjoladata, include=FALSE}
+#setwd("//ad.helsinki.fi/home/p/pdsalo/Desktop/Gradu")
+
+pohjoladata <- read.table("data/pohjolatotal.txt")
+
+pohjoladata$syntymakuukausi.x = factor(pohjoladata$syntymakuukausi.x,levels(pohjoladata$syntymakuukausi.x)[c(1,3,4,2)])
+
+pohjoladata$syntymakuukausi.y = factor(pohjoladata$syntymakuukausi.y,levels(pohjoladata$syntymakuukausi.y)[c(1,3,4,2)])
+
+pohjoladata = pohjoladata %>% group_by(Sukupuoli, VVVV, syntymakuukausi.x, kausi) %>% mutate(lkm=sum(lkm.x))
+
+
+#str(pohjoladata)
+```
+
+### Syntymäaikojen frekvenssit
+
+Yleensä aiheen tutkimuksissa syntypäivät jaetaan neljänneksiin ja tarkastelu suoritetaan tutkimalla kunkin neljänneksen suhteellisia frekvenssejä. Tässä tutkimuksessa toimitaan samoin.
+
+#### Jääkiekkoa harrastavien syntymäajat
+
+```{r Kaikki pelaajat piirros, echo=FALSE}
+
+jun <- subset(unique_jun, (ika == 10 | ika ==12| ika==14| ika ==16| ika == 18) & (kausi == 2004 | kausi == 2007 | kausi == 2010 | kausi == 2013 | kausi == 2016) & sukupuoli == "pojat")
+
+#jun$ika <- factor(jun$ika)
+
+bp <- ggplot(jun, aes(x=syntymakuukausi.x, y=proportion.x, group=ika)) +
+  
+  geom_point(aes(color=ika)) + 
+  geom_line(aes(color=ika))+
+  geom_hline(yintercept = 0.25)+
+  facet_wrap(~kausi,ncol = 3)+
+  scale_color_gradient(low="#33CC33", high="#CCFFCC")+
+  theme_dark()+
+  #geom_smooth(method = "lm")+
+   xlab("Neljännes") +
+  #ylab("Otoksen poikkeama väestöstä (prosenttiyksikköä)")+
+  scale_y_continuous(labels=percent_format()) + 
+labs(title = paste("Jääkiekkoa harrastavien poikien syntymäajat \nneljänneksittäin kausilla 2004-2016, ","n =",toString(sum(jun[,6]))))
+
+print(bp)
+```
+
+
+Kuvasta nähdään, että poikapelaajien keskuudessa syntymäajat jakautuvat selvästi eri tavoin kuin koko väestöllä. Ensimmäisen neljänneksen suhteellinen frekvenssi on huomattavasti suurempi jääkiekon harrastajien syntymäaikojen joukossa kuin koko väestön. Viimeisen neljänneksen osuus taas on vieläkin pienempi kuin koko väestön joukossa.
+
+```{r Kaikki tyttopelaajat piirros, echo=FALSE}
+
+jun <- subset(unique_jun, (ika == 10 | ika ==12| ika==14| ika ==16| ika == 18) & (kausi == 2004 | kausi == 2007 | kausi == 2010 | kausi == 2013 | kausi == 2016) & sukupuoli == "tytöt")
+
+#jun$ika <- factor(jun$ika)
+
+bp <- ggplot(jun, aes(x=syntymakuukausi.x, y=proportion.x, group=ika)) +
+  
+  geom_point(aes(color=ika)) + 
+  geom_line(aes(color=ika))+
+  geom_hline(yintercept = 0.25)+
+  facet_wrap(~kausi,ncol = 3)+
+  scale_color_gradient(low="#FFCC00", high="#FFFFCC")+
+  #geom_smooth(method = "lm")+
+   xlab("Neljännes") +
+  theme_dark()+
+  #ylab("Otoksen poikkeama väestöstä (prosenttiyksikköä)")+
+  scale_y_continuous(labels=percent_format()) + 
+labs(title = paste("Jääkiekkoa harrastavien tyttöjen syntymäajat \nneljänneksittäin vuosina 2004-2016, ","n =",toString(sum(jun[,6]))))
+
+print(bp)
+```
+
+Tyttöpelaajien osalta kuvasta ei ole nähtävissä yhtä selkeästi ensimmäisen tai toisen neljänneksen yliedustusta suhteessa koko väestön syntymäaikoihin. Viimeisen neljänneksen osuus taas on joinakin vuosina ollut jopa suurempi kuin koko väestöllä, mutta esimerkiksi vuonna 2016 10-vuotiaiden pelaajien keskuudessa sen osuus oli vain noin 15 prosenttia. (Tyttöjen osalta ei siis pystytä osoittamaan ainakaan kuvan perusteella selkeää eroa koko väestön syntymäaikojen jakaumiin.) Toisaalta tyttöpelaajien osalta otoskoko on vain murto-osa poikien vastaavasta.
+
+
+#### Koko väestön syntymäajat
+
+Vuosina 1983-2013 Suomessa on syntynyt vuosittain noin 53-67 tuhatta lasta. Tarkasteltaessa väestön syntymäaikoja neljänneksittäin havaitaan, että toisen ja kolmannen neljänneksen aikana on syntynyt hieman enemmän lapsia kuin ensimmäisellä ja vastaavasti viimeisellä neljänneksellä on syntynyt selkeästi vähiten lapsia. Kuvasta nähdään, että toisen ja kolmannen neljänneksen aikana on syntynyt 25-26,5 prosenttia vuoden kaikista lapsista. Ensimmäisen neljänneksen osuus on kaikkein lähinpänä tasajakaumaa vastaavaa osuutta eli se on vaihdellut noin 24,5-25,5 prosentissa. Viimeisen neljänneksen osuus taas kuten mainittu on ollut selkeästi pienin vaihdellen jopa alle 23 prosentista noin 24,5 prosenttiin. 
+
+ 
+
+```{r syntymaaikojen jakaumat koko vaesto..., echo=FALSE}
+
+jun <- subset(unique_jun, VVVV<2014 & VVVV>1880)
+
+#jun <- mutate(jun, factor(jun$kausi))
+
+bp <- ggplot(jun, aes(x=syntymakuukausi.x, y=proportion.y, group=VVVV)) +
+  
+  geom_point(aes(color=VVVV)) + 
+  geom_line(aes(color=VVVV))+
+  geom_hline(yintercept = 0.25)+
+  xlab("Neljännes") +
+  #facet_wrap(~ika,ncol = 4)+
+  #geom_smooth(method = "lm")+
+  scale_y_continuous(labels=percent_format()) + 
+labs(title = paste("Väestön syntymäaikojen jakauma vuosina 1983-2013,\n","n =",toString(sum(jun[,6]))))
+
+print(bp)
+```
+
+Tämä on tärkeää ottaa huomioon suhteellisen iän ilmiön esiintymistä tutkittaessa, sillä väestön syntymäaikojen epätasainen jakauma voi osaltaan selittää havaittuja urheiluharrastajien epätasaisia jakaumia. Toisaalta urheilun parissa havaittujen jakaumien tulisi kuitenkin olla suhteellisen tasaisia, jotta väestön syntymäajat selittäisivät ilmiön kokonaan.
+
+
+
+
+#### Khiin neliö testi:
+
+Ilmiötä voidaan tutkia vertaamalla havaintoarvoja eli pelaajien syntymäaikojen havaittuja frekvenssejä ja väestön perusteella odotettuja frekvenssejä. Tähän tarkoitukseen soveltuu hyvin Khiin neliö testi. Khiin neliö -testisuure lasketaan seuraavalla kaavalla: 
+
+  $\chi^2 = \sum_{i=1}^{n}{\frac{(O_i-E_i)^2}{E_i}},$
+              
+jossa $O_i$ tarkoittaa havaittua frekvenssiä ja $E_i$ odotettua frekvenssiä.            
+Testisuureen $\chi^2$ avulla voidaan "mitata" onko jollakin havaitulla jakaumalla ja odotetulla jakaumalla tilastollisesti merkitsevää eroa. "Testisuure saa arvon nolla, kun muuttujat ovat tilastollisesti täysin riippumattomia. Käytännössä tämä tarkoittaisi, että havaitut ja odotetut frekvenssit ovat yhtäsuuret." "Ts. testisuureen arvo on sitä suurempi mitä enemmän havaitut frekvenssi eroavat odotetuista." Testisuuren avulla lasketaan p-arvo, (joka kertoo tilastollisen merkitsevyyden luottamustason/jota voidaan käyttää tilastollisen merkitsevyyden tarkasteluun)? Mikäli p-arvo on suurempi kuin 0,05 jää H0 voimaan eli muuttujat eivät riipu toisistaan (frekvenssien välillä ei ole tilastollisesti merkitsevää eroa), H1: muuttujat riippuvat toisistaan (muuttujien frekvenssit eroavat tilastollisesti merkitsevästi toisistaan).  
+
+ http://www.tilastollinentutkimus.fi/5.SPSS/Riippuvuudet.pdf
+ 
+Tehdään Khii neliö testi:
+
+- Pojille ja tytöille eri ikäluokille ja vuosille. 
+
+Selvitetään siis ilmiön läsnäolo pojissa ja tytöissä sekä ilmeneekö ilmiö vain tiettynä vuonna tai tietyissä ikäluokissa
+
+Tuloksia:
+
+##### Pojat
+
+```{r taulukon tekija, echo=FALSE}
+
+havaitut <- data.frame()
+parvot <- data.frame()
+khiit <- data.frame()
+ika <- data.frame()
+kausi <- data.frame()
+tuloslkm <- data.frame()
+prosentit <- data.frame()
+
+tulos4 <- 2
+tulosy <- c(1:4)
+
+kaudet <- c(2004,2007,2010,2013,2016)
+iat <- c(8,10,12,14,16,18)
+
+
+for (ii in kaudet) {
+  
+for (i in iat) {
+  
+jun <- subset(unique_jun, kausi==ii & (ika==(i)) & sukupuoli=="pojat")
+jun <- jun[order(jun$KK),]
+
+keep <- c("ika","kausi","Sukupuoli","pct.x","lkm.x","pct.y", "KK", "VVVV", "lkm.y", "proportion.y", "syntymakuukausi.x", "lkm")
+
+# select the 'keep' columns
+testdata <- select(jun, one_of(keep))
+
+testdata <- testdata %>% group_by(KK) %>% mutate(lkmx2 = sum(lkm.x),
+                                                 lkmy2= sum(lkm.y))
+
+testdata <- testdata %>% group_by(syntymakuukausi.x) %>% mutate(lkmy = sum(lkm.y), lkmx = sum(lkm.x))
+                                      
+
+testdata <- testdata %>% mutate(pcty2 = lkmy2/sum(testdata$lkm.y),
+                                proportiony2=lkmy/sum(testdata$lkm.y))
+
+keep <- c("Sukupuoli", "pcty2", "KK", "lkmx2", "syntymakuukausi.x")
+
+
+
+keep <- c("Sukupuoli", "proportiony2", "syntymakuukausi.x", "lkmx")
+
+# select the 'keep' columns
+testdata <- select(testdata, one_of(keep))
+testdata <- unique(testdata)
+
+chisq <- chisq.test(testdata$lkmx, p = testdata$proportiony2)
+
+chisq
+
+chisq$observed
+
+round(chisq$expected)
+
+tuloslkm <- chisq$observed
+
+tulos <- format(round((tuloslkm/sum(tuloslkm))*100,1), nsmall = 1)
+
+prosentit <- rbind(prosentit, tulos, stringsAsFactors = FALSE)
+
+  for (iii in 1:4) {
+  
+    tulosy[iii] <- paste(tuloslkm[iii]," (", tulos[iii], "%)" ,sep = "")
+    
+  }
+
+havaitut <- rbind(havaitut, tulosy, stringsAsFactors = FALSE)
+
+
+
+tulos1 <- chisq$p.value
+
+if(tulos1 > 0.05) {
+  tulosp <- round(tulos1, 3)
+}
+
+if(tulos1 < 0.05) {
+  tulosp <- "<0,05"
+}
+
+if (tulos1 < 0.01) {
+  tulosp <- "<0,01"
+}
+
+parvot <- rbind(parvot, tulosp,stringsAsFactors = FALSE)
+
+
+
+
+tulos2 <- round(chisq$statistic, 2)
+khiit <- rbind(khiit, tulos2)
+tulos3 <- i
+ika <- rbind(ika, tulos3)
+
+  if (ii == tulos4) {
+    kausi <- rbind(kausi, "")
+  }
+
+  if (ii != tulos4) {
+    tulos4 <- ii
+    kausi <- rbind(kausi, tulos4)
+  }
+
+
+}
+
+}  
+
+taulukko <- cbind(kausi, ika, havaitut, khiit, parvot)
+colnames(taulukko) <- c("Kausi","Ikä", "eka","toka","kol","nel", "X^2", "P-arvo")
+
+print(taulukko)
+```
+
+
+##### Tytöt
+
+```{r taulukon tekija tytot, echo=FALSE}
+
+havaitut <- data.frame()
+parvot <- data.frame()
+khiit <- data.frame()
+ika <- data.frame()
+kausi <- data.frame()
+tuloslkm <- data.frame()
+prosentit <- data.frame()
+
+tulos4 <- 2
+tulosy <- c(1:4)
+
+kaudet <- c(2004,2007,2010,2013,2016)
+iat <- c(8,10,12,14,16,18)
+
+
+for (ii in kaudet) {
+  
+for (i in iat) {
+  
+jun <- subset(unique_jun, kausi==ii & (ika==(i)) & sukupuoli=="tytöt")
+jun <- jun[order(jun$KK),]
+
+keep <- c("ika","kausi","Sukupuoli","pct.x","lkm.x","pct.y", "KK", "VVVV", "lkm.y", "proportion.y", "syntymakuukausi.x", "lkm")
+
+# select the 'keep' columns
+testdata <- select(jun, one_of(keep))
+
+testdata <- testdata %>% group_by(KK) %>% mutate(lkmx2 = sum(lkm.x),
+                                                 lkmy2= sum(lkm.y))
+
+testdata <- testdata %>% group_by(syntymakuukausi.x) %>% mutate(lkmy = sum(lkm.y), lkmx = sum(lkm.x))
+                                      
+
+testdata <- testdata %>% mutate(pcty2 = lkmy2/sum(testdata$lkm.y),
+                                proportiony2=lkmy/sum(testdata$lkm.y))
+
+keep <- c("Sukupuoli", "pcty2", "KK", "lkmx2", "syntymakuukausi.x")
+
+
+
+keep <- c("Sukupuoli", "proportiony2", "syntymakuukausi.x", "lkmx")
+
+# select the 'keep' columns
+testdata <- select(testdata, one_of(keep))
+testdata <- unique(testdata)
+
+chisq <- chisq.test(testdata$lkmx, p = testdata$proportiony2)
+
+chisq
+
+chisq$observed
+
+round(chisq$expected)
+
+tuloslkm <- chisq$observed
+
+tulos <- format(round((tuloslkm/sum(tuloslkm))*100,1), nsmall = 1)
+
+prosentit <- rbind(prosentit, tulos, stringsAsFactors = FALSE)
+
+  for (iii in 1:4) {
+  
+    tulosy[iii] <- paste(tuloslkm[iii]," (", tulos[iii], "%)" ,sep = "")
+    
+  }
+
+havaitut <- rbind(havaitut, tulosy, stringsAsFactors = FALSE)
+
+
+
+tulos1 <- chisq$p.value
+
+if(tulos1 > 0.05) {
+  tulosp <- round(tulos1, 3)
+}
+
+if(tulos1 < 0.05) {
+  tulosp <- "<0,05"
+}
+
+if (tulos1 < 0.01) {
+  tulosp <- "<0,01"
+}
+
+parvot <- rbind(parvot, tulosp,stringsAsFactors = FALSE)
+
+
+
+
+tulos2 <- round(chisq$statistic, 2)
+khiit <- rbind(khiit, tulos2)
+tulos3 <- i
+ika <- rbind(ika, tulos3)
+
+  if (ii == tulos4) {
+    kausi <- rbind(kausi, "")
+  }
+
+  if (ii != tulos4) {
+    tulos4 <- ii
+    kausi <- rbind(kausi, tulos4)
+  }
+
+
+}
+
+}  
+
+taulukko <- cbind(kausi, ika, havaitut, khiit, parvot)
+colnames(taulukko) <- c("Kausi","Ikä", "eka","toka","kol","nel", "X^2", "P-arvo")
+
+print(taulukko)
+```
+
+Havaitaan, että väestön ja poikapelaajien syntymäaikojen jakaumat eroavat tilastollisesti merkittävästi lähes jokaisessa tarkasteltavassa ryhmässä. Tyttöpelaajie osalta ei löydy  merkitsevää eroa.
+
+
+Sama testi pohjola leirille valituille pelaajille
+
+
+```{r taulukon tekija pohjoladatalle, echo=FALSE}
+
+havaitut <- data.frame()
+parvot <- data.frame()
+khiit <- data.frame()
+ika <- data.frame()
+kausi <- data.frame()
+tuloslkm <- data.frame()
+prosentit <- data.frame()
+
+tulos4 <- 2
+tulosy <- c(1:4)
+
+kaudet <- c(2011,2012,2013,2014,2015,2016,2017)
+iat <- c(14,15)
+
+
+for (ii in kaudet) {
+  
+for (i in iat) {
+
+jun <- subset(pohjoladata, kausi==ii & (ika==(i)) & sukupuoli=="pojat")
+jun <- jun[order(jun$KK),]
+
+if (sum(jun$KK) == 0) next
+
+keep <- c("ika","kausi","Sukupuoli","pct.x","lkm.x","pct.y", "KK", "VVVV", "lkm.y", "proportion.y", "syntymakuukausi.x", "lkm")
+
+# select the 'keep' columns
+testdata <- select(jun, one_of(keep))
+
+testdata <- testdata %>% group_by(KK) %>% mutate(lkmx2 = sum(lkm.x),
+                                                 lkmy2= sum(lkm.y))
+
+testdata <- testdata %>% group_by(syntymakuukausi.x) %>% mutate(lkmy = sum(lkm.y), lkmx = sum(lkm.x))
+                                      
+
+testdata <- testdata %>% mutate(pcty2 = lkmy2/sum(testdata$lkm.y),
+                                proportiony2=lkmy/sum(testdata$lkm.y))
+
+keep <- c("Sukupuoli", "pcty2", "KK", "lkmx2", "syntymakuukausi.x")
+
+
+
+keep <- c("Sukupuoli", "proportiony2", "syntymakuukausi.x", "lkmx")
+
+# select the 'keep' columns
+testdata <- select(testdata, one_of(keep))
+testdata <- unique(testdata)
+
+chisq <- chisq.test(testdata$lkmx, p = testdata$proportiony2)
+
+chisq
+
+chisq$observed
+
+round(chisq$expected)
+
+tuloslkm <- chisq$observed
+
+tulos <- format(round((tuloslkm/sum(tuloslkm))*100,1), nsmall = 1)
+
+prosentit <- rbind(prosentit, tulos, stringsAsFactors = FALSE)
+
+  for (iii in 1:4) {
+  
+    tulosy[iii] <- paste(tuloslkm[iii]," (", tulos[iii], "%)" ,sep = "")
+    
+  }
+
+havaitut <- rbind(havaitut, tulosy, stringsAsFactors = FALSE)
+
+
+
+tulos1 <- chisq$p.value
+
+if(tulos1 > 0.05) {
+  tulosp <- round(tulos1, 3)
+}
+
+if(tulos1 < 0.05) {
+  tulosp <- "<0,05"
+}
+
+if (tulos1 < 0.01) {
+  tulosp <- "<0,01"
+}
+
+parvot <- rbind(parvot, tulosp,stringsAsFactors = FALSE)
+
+
+
+
+tulos2 <- round(chisq$statistic, 2)
+khiit <- rbind(khiit, tulos2)
+tulos3 <- i
+ika <- rbind(ika, tulos3)
+
+  if (ii == tulos4) {
+    kausi <- rbind(kausi, "")
+  }
+
+  if (ii != tulos4) {
+    tulos4 <- ii
+    kausi <- rbind(kausi, tulos4)
+  }
+
+
+}
+
+}  
+
+taulukko <- cbind(kausi, ika, havaitut, khiit, parvot)
+colnames(taulukko) <- c("Kausi","Ikä", "eka","toka","kol","nel", "X^2", "P-arvo")
+
+kable(taulukko, caption = "Pohjola-leiri pelaajat")
+```
+
+
+
+
+
+```{r Pohjola leiri pelaajat piirros, echo=FALSE}
+
+jun <- subset(pohjoladata)
+
+#jun <- mutate(jun, factor(jun$kausi))
+
+bp <- ggplot(jun, aes(x=syntymakuukausi.x, y=otoksenPoikkeamaVaestosta2*100, group=kausi)) +
+  
+  geom_point(aes(color=kausi)) + 
+  geom_line(aes(color=kausi))+
+  geom_hline(yintercept = 0)+
+  #facet_wrap(~ika,ncol = 1)+
+  #geom_smooth(method = "lm")+
+   xlab("Neljännes") +
+  ylab("Otoksen poikkeama väestöstä (prosenttiyksikköä)")+
+  #labs(subtitle   = "Musta viiva nollassa kuvaa tasoa, jossa eroa väestön jakaumaan ei ole")+
+  labs(caption   = "Kuva 2")+
+  geom_text(aes( 3.75, 20, label = "Musta viiva nollassa kuvaa tasoa, \njossa eroa väestön jakaumaan ei ole", vjust = 0.5), size = 3, check_overlap = TRUE)+
+  #scale_y_continuous(labels=percent_format()) + 
+labs(title = paste("Pohjola-leirille valittujen pelaajien syntymäaikojen \npoikkeama väestöstä vuosina 2011-2017,","n =",toString(sum(jun[,6]))))
+
+print(bp)
+```
+
+pohjola leiriläisille/tyttöjen maajoukkue pelaajille
+
+Ammattilaisille jokin vertailu?
+
+```{r liigadata, echo=FALSE}
+#setwd("//ad.helsinki.fi/home/p/pdsalo/Desktop/Gradu")
+
+liiga <- read.table("data/liigadata16.txt")
+
+
+#str(liiga)
+```
+
+
+```{r liiga alku vs loppuvuodesta syntyneet, echo=FALSE}
+
+binit <- c(1,6,12)
+syntynyt <- cut(liiga$KK, breaks = binit, include.lowest = TRUE, labels = c("Alkuvuosi (1-6)", "Loppuvuosi (7-12)"))
+
+g <- ggplot(liiga, aes(x = syntynyt))
+g <- g + geom_bar(position = "dodge") 
+g <- g + labs(y = "lkm")
+#g <- g + theme(axis.title.x=element_blank(),axis.text.x=element_text(color = "black", size=11, angle=30, vjust=.8, hjust=0.8))
+#g <- g + scale_x_discrete(labels= neljännekset)
+g <- g + ggtitle(paste("Liigapelaajat 2016, n =",toString(dim(liiga)[1])))
+print(g)
+```
+
+Liigapelaajat ikäryhmittäin: näyttää siltä, että syntymäkuukaudella on paljon suurempi merkitys tulokkaiden/nuorimpien pelaajien keskuudessa.
+
+```{r liiga alku vs loppuvuodesta syntyneet ikaryhmittain, echo=FALSE}
+# create a quantile vector 
+#bins <- quantile(liiga$ika)
+bins <- c(15,21,43)
+# create a categorical variable 'crime'
+ikaryhma <- cut(liiga$ika, breaks = bins, include.lowest = TRUE, labels = c("16-21","22-38"))
+# add the new categorical value to data
+liigap <- data.frame(liiga, ikaryhma)
+
+binit <- c(1,6,12)
+syntynyt <- cut(liigap$KK, breaks = binit, include.lowest = TRUE, labels = c("Alkuvuosi (1-6)", "Loppuvuosi (7-12)"))
+
+#as.numeric(syntynyt)
+
+
+
+g <- ggplot(liigap, aes(x = ikaryhma, fill = syntynyt))
+g <- g + geom_bar(position = "dodge") 
+g <- g + labs(y = "lkm")
+#g <- g + theme(axis.title.x=element_blank(),axis.text.x=element_text(color = "black", size=11, angle=30, vjust=.8, hjust=0.8))
+#g <- g + scale_x_discrete(labels= neljännekset)
+g <- g + ggtitle(paste("Liigapelaajat 2016, n =",toString(dim(liigap)[1])))
+print(g)
+```
+
+## Liitteitä
+
+
+
+```{r taulukko pojat, echo=FALSE}
+
+
+havaitut <- data.frame()
+parvot <- data.frame()
+khiit <- data.frame()
+ika <- data.frame()
+kausi <- data.frame()
+tuloslkm <- data.frame()
+prosentit <- data.frame()
+
+tulos4 <- 2
+tulosy <- c(1:4)
+
+kaudet <- c(2004,2007,2010,2013,2016)
+iat <- c(8,10,12,14,16,18)
+
+
+for (ii in kaudet) {
+  
+for (i in iat) {
+  
+jun <- subset(unique_jun, kausi==ii & (ika==(i)) & sukupuoli=="pojat")
+jun <- jun[order(jun$KK),]
+
+keep <- c("ika","kausi","Sukupuoli","pct.x","lkm.x","pct.y", "KK", "VVVV", "lkm.y", "proportion.y", "syntymakuukausi.x", "lkm")
+
+# select the 'keep' columns
+testdata <- select(jun, one_of(keep))
+
+testdata <- testdata %>% group_by(KK) %>% mutate(lkmx2 = sum(lkm.x),
+                                                 lkmy2= sum(lkm.y))
+
+testdata <- testdata %>% group_by(syntymakuukausi.x) %>% mutate(lkmy = sum(lkm.y), lkmx = sum(lkm.x))
+                                      
+
+testdata <- testdata %>% mutate(pcty2 = lkmy2/sum(testdata$lkm.y),
+                                proportiony2=lkmy/sum(testdata$lkm.y))
+
+keep <- c("Sukupuoli", "pcty2", "KK", "lkmx2", "syntymakuukausi.x")
+
+
+
+keep <- c("Sukupuoli", "proportiony2", "syntymakuukausi.x", "lkmx")
+
+# select the 'keep' columns
+testdata <- select(testdata, one_of(keep))
+testdata <- unique(testdata)
+
+chisq <- chisq.test(testdata$lkmx, p = testdata$proportiony2)
+
+chisq
+
+chisq$observed
+
+round(chisq$expected)
+
+tuloslkm <- chisq$observed
+
+tulos <- format(round((tuloslkm/sum(tuloslkm))*100,1), nsmall = 1)
+
+prosentit <- rbind(prosentit, tulos, stringsAsFactors = FALSE)
+
+  for (iii in 1:4) {
+  
+    tulosy[iii] <- paste(tuloslkm[iii]," (", tulos[iii], "%)" ,sep = "")
+    
+  }
+
+havaitut <- rbind(havaitut, tulosy, stringsAsFactors = FALSE)
+
+
+
+tulos1 <- chisq$p.value
+
+if(tulos1 > 0.05) {
+  tulosp <- round(tulos1, 3)
+}
+
+if(tulos1 < 0.05) {
+  tulosp <- "<0,05"
+}
+
+if (tulos1 < 0.01) {
+  tulosp <- "<0,01"
+}
+
+parvot <- rbind(parvot, tulosp,stringsAsFactors = FALSE)
+
+
+
+
+tulos2 <- round(chisq$statistic, 2)
+khiit <- rbind(khiit, tulos2)
+tulos3 <- i
+ika <- rbind(ika, tulos3)
+
+  if (ii == tulos4) {
+    kausi <- rbind(kausi, "")
+  }
+
+  if (ii != tulos4) {
+    tulos4 <- ii
+    kausi <- rbind(kausi, tulos4)
+  }
+
+
+}
+
+}  
+
+taulukko <- cbind(kausi, ika, havaitut)
+colnames(taulukko) <- c("Kausi","Ikä", "eka","toka","kol","nel")
+
+
+
+kable(taulukko, caption = "Poikapelaajien lukumäärät neljänneksittäin")
+```
+
+```{r liite tytot, echo=FALSE}
+
+havaitut <- data.frame()
+parvot <- data.frame()
+khiit <- data.frame()
+ika <- data.frame()
+kausi <- data.frame()
+tuloslkm <- data.frame()
+prosentit <- data.frame()
+
+tulos4 <- 2
+tulosy <- c(1:4)
+
+kaudet <- c(2004,2007,2010,2013,2016)
+iat <- c(8,10,12,14,16,18)
+
+
+for (ii in kaudet) {
+  
+for (i in iat) {
+  
+jun <- subset(unique_jun, kausi==ii & (ika==(i)) & sukupuoli=="tytöt")
+jun <- jun[order(jun$KK),]
+
+keep <- c("ika","kausi","Sukupuoli","pct.x","lkm.x","pct.y", "KK", "VVVV", "lkm.y", "proportion.y", "syntymakuukausi.x", "lkm")
+
+# select the 'keep' columns
+testdata <- select(jun, one_of(keep))
+
+testdata <- testdata %>% group_by(KK) %>% mutate(lkmx2 = sum(lkm.x),
+                                                 lkmy2= sum(lkm.y))
+
+testdata <- testdata %>% group_by(syntymakuukausi.x) %>% mutate(lkmy = sum(lkm.y), lkmx = sum(lkm.x))
+                                      
+
+testdata <- testdata %>% mutate(pcty2 = lkmy2/sum(testdata$lkm.y),
+                                proportiony2=lkmy/sum(testdata$lkm.y))
+
+keep <- c("Sukupuoli", "pcty2", "KK", "lkmx2", "syntymakuukausi.x")
+
+
+
+keep <- c("Sukupuoli", "proportiony2", "syntymakuukausi.x", "lkmx")
+
+# select the 'keep' columns
+testdata <- select(testdata, one_of(keep))
+testdata <- unique(testdata)
+
+chisq <- chisq.test(testdata$lkmx, p = testdata$proportiony2)
+
+chisq
+
+chisq$observed
+
+round(chisq$expected)
+
+tuloslkm <- chisq$observed
+
+tulos <- format(round((tuloslkm/sum(tuloslkm))*100,1), nsmall = 1)
+
+prosentit <- rbind(prosentit, tulos, stringsAsFactors = FALSE)
+
+  for (iii in 1:4) {
+  
+    tulosy[iii] <- paste(tuloslkm[iii]," (", tulos[iii], "%)" ,sep = "")
+    
+  }
+
+havaitut <- rbind(havaitut, tulosy, stringsAsFactors = FALSE)
+
+
+
+tulos1 <- chisq$p.value
+
+if(tulos1 > 0.05) {
+  tulosp <- round(tulos1, 3)
+}
+
+if(tulos1 < 0.05) {
+  tulosp <- "<0,05"
+}
+
+if (tulos1 < 0.01) {
+  tulosp <- "<0,01"
+}
+
+parvot <- rbind(parvot, tulosp,stringsAsFactors = FALSE)
+
+
+
+
+tulos2 <- round(chisq$statistic, 2)
+khiit <- rbind(khiit, tulos2)
+tulos3 <- i
+ika <- rbind(ika, tulos3)
+
+  if (ii == tulos4) {
+    kausi <- rbind(kausi, "")
+  }
+
+  if (ii != tulos4) {
+    tulos4 <- ii
+    kausi <- rbind(kausi, tulos4)
+  }
+
+
+}
+
+}  
+
+taulukko <- cbind(kausi, ika, havaitut)
+colnames(taulukko) <- c("Kausi","Ikä", "eka","toka","kol","nel")
+
+kable(taulukko, caption = "Tyttöpelaajien lukumäärät neljänneksittäin")
+```
